@@ -46,11 +46,14 @@ const Experience = () => {
             <div className="flex flex-col justify-between gap-4 sm:flex-row sm:items-center">
               <div>
                 <h3 className="text-2xl font-bold text-white">Ann Road Animal Hospital</h3>
-                <p className="text-lg text-blue-400">AI Associate</p>
+                <p className="text-lg text-blue-400">Veterinary Assistant & IT Support Specialist</p>
               </div>
               <span className="rounded-full bg-white/10 px-4 py-1 text-sm font-medium text-slate-300">
                 2018 – Present
               </span>
+            </div>
+            <div className="mt-4 text-slate-300">
+              <p>Providing veterinary care assistance while managing IT infrastructure and technical support for the hospital.</p>
             </div>
           </div>
         </div>
