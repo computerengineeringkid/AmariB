@@ -1,4 +1,4 @@
-import { Briefcase, Star, GraduationCap, FileText, ArrowUpRight } from 'lucide-react'
+import { Briefcase, Star, GraduationCap, FileText, ArrowUpRight, Download } from 'lucide-react'
 
 /**
  * About Page - Personal information, experience, and skills
@@ -140,26 +140,111 @@ const About = () => {
           <FileText className="text-blue-500" />
           Professional Materials
         </h3>
-        <div className="rounded-2xl border border-white/10 bg-white/5 p-6">
-          <a
-            href="https://docs.google.com/document/d/1EmJlpqOfpms8y7LcIcwE_At-CgZ-jYeZzMfL4AKdczY/edit?usp=sharing"
-            target="_blank"
-            rel="noreferrer"
-            className="group flex items-center justify-between rounded-xl border border-white/10 bg-slate-900/50 p-5 transition hover:border-blue-500/50 hover:bg-slate-800/50"
-          >
-            <div className="flex items-center gap-4">
-              <div className="grid h-12 w-12 place-items-center rounded-xl bg-blue-500/10 text-blue-400">
-                <FileText size={24} />
+        <div className="rounded-2xl border border-white/10 bg-white/5 p-6 space-y-6">
+          <p className="text-slate-400 text-sm">
+            Boards Materials (Resume, Business Card, Statement of Intent)
+          </p>
+
+          {/* Document Links */}
+          <div className="grid gap-4 sm:grid-cols-2">
+            {/* Resume */}
+            <a
+              href="https://docs.google.com/document/d/1izqKNFiG-qeW8tyuphhQBQX13GOpG4X8/edit?usp=sharing&ouid=115978480032856245481&rtpof=true&sd=true"
+              target="_blank"
+              rel="noreferrer"
+              className="group flex items-center justify-between rounded-xl border border-white/10 bg-slate-900/50 p-5 transition hover:border-blue-500/50 hover:bg-slate-800/50"
+            >
+              <div className="flex items-center gap-4">
+                <div className="grid h-12 w-12 place-items-center rounded-xl bg-green-500/10 text-green-400">
+                  <FileText size={24} />
+                </div>
+                <div>
+                  <h4 className="font-semibold text-white group-hover:text-green-400 transition">
+                    Resume
+                  </h4>
+                  <p className="text-sm text-slate-400">Google Doc</p>
+                </div>
               </div>
-              <div>
-                <h4 className="font-semibold text-white group-hover:text-blue-400 transition">
-                  Statement of Intent
-                </h4>
-                <p className="text-sm text-slate-400">Google Doc</p>
+              <ArrowUpRight className="text-slate-400 group-hover:text-green-400 transition" size={20} />
+            </a>
+
+            {/* Statement of Intent */}
+            <a
+              href="https://docs.google.com/document/d/1EmJlpqOfpms8y7LcIcwE_At-CgZ-jYeZzMfL4AKdczY/edit?usp=sharing"
+              target="_blank"
+              rel="noreferrer"
+              className="group flex items-center justify-between rounded-xl border border-white/10 bg-slate-900/50 p-5 transition hover:border-blue-500/50 hover:bg-slate-800/50"
+            >
+              <div className="flex items-center gap-4">
+                <div className="grid h-12 w-12 place-items-center rounded-xl bg-blue-500/10 text-blue-400">
+                  <FileText size={24} />
+                </div>
+                <div>
+                  <h4 className="font-semibold text-white group-hover:text-blue-400 transition">
+                    Statement of Intent
+                  </h4>
+                  <p className="text-sm text-slate-400">Google Doc</p>
+                </div>
+              </div>
+              <ArrowUpRight className="text-slate-400 group-hover:text-blue-400 transition" size={20} />
+            </a>
+          </div>
+
+          {/* Business Card */}
+          <div>
+            <h4 className="font-semibold text-white mb-4">Business Card</h4>
+            <div className="grid gap-4 sm:grid-cols-2">
+              {/* Front */}
+              <div className="rounded-xl border border-white/10 bg-slate-900/50 p-4">
+                <p className="text-sm text-slate-400 mb-3">Front</p>
+                <a
+                  href="/businesscard/1.webp"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="block overflow-hidden rounded-lg border border-white/10 hover:border-blue-500/50 transition"
+                >
+                  <img
+                    src="/businesscard/1.webp"
+                    alt="Business Card Front"
+                    className="w-full h-auto object-cover hover:scale-105 transition-transform duration-300"
+                  />
+                </a>
+                <a
+                  href="/businesscard/1.webp"
+                  download="AmariB-BusinessCard-Front.webp"
+                  className="mt-3 inline-flex items-center gap-2 text-sm text-blue-400 hover:text-blue-300 transition"
+                >
+                  <Download size={16} />
+                  Download
+                </a>
+              </div>
+
+              {/* Back */}
+              <div className="rounded-xl border border-white/10 bg-slate-900/50 p-4">
+                <p className="text-sm text-slate-400 mb-3">Back</p>
+                <a
+                  href="/businesscard/2.webp"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="block overflow-hidden rounded-lg border border-white/10 hover:border-blue-500/50 transition"
+                >
+                  <img
+                    src="/businesscard/2.webp"
+                    alt="Business Card Back"
+                    className="w-full h-auto object-cover hover:scale-105 transition-transform duration-300"
+                  />
+                </a>
+                <a
+                  href="/businesscard/2.webp"
+                  download="AmariB-BusinessCard-Back.webp"
+                  className="mt-3 inline-flex items-center gap-2 text-sm text-blue-400 hover:text-blue-300 transition"
+                >
+                  <Download size={16} />
+                  Download
+                </a>
               </div>
             </div>
-            <ArrowUpRight className="text-slate-400 group-hover:text-blue-400 transition" size={20} />
-          </a>
+          </div>
         </div>
       </section>
     </div>
