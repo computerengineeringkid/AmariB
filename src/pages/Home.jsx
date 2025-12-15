@@ -6,10 +6,11 @@ const Home = () => {
       <div className="relative mb-8">
         <div className="absolute -inset-1 rounded-full bg-gradient-to-br from-blue-500 to-indigo-600 opacity-75 blur-lg"></div>
         <div className="relative h-48 w-48 overflow-hidden rounded-full border-4 border-slate-900 bg-slate-800 shadow-2xl">
-          {/* Placeholder for headshot */}
-          <div className="flex h-full w-full items-center justify-center bg-slate-800 text-slate-600">
-            <span className="text-4xl">AB</span>
-          </div>
+          <img
+            src="/headshot.webp"
+            alt="Amari Bullard"
+            className="h-full w-full object-cover"
+          />
         </div>
       </div>
 
