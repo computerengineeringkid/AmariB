@@ -49,7 +49,7 @@ const NavBar = () => {
             Contact
           </NavLink>
           <a
-            href="https://www.linkedin.com"
+            href="https://www.linkedin.com/in/amari-b-ab932b176/"
             target="_blank"
             rel="noreferrer"
             aria-label="Open LinkedIn"

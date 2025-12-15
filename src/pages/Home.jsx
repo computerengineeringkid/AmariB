@@ -30,7 +30,7 @@ const Home = () => {
       </p>
 
       <a
-        href="https://www.linkedin.com"
+        href="https://www.linkedin.com/in/amari-b-ab932b176/"
         target="_blank"
         rel="noreferrer"
         className="group flex items-center gap-3 rounded-full bg-blue-600 px-8 py-4 font-semibold text-white transition hover:bg-blue-500 hover:shadow-lg hover:shadow-blue-500/25"

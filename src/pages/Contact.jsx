@@ -60,7 +60,7 @@ const Contact = () => {
         <div className="mt-12 flex flex-col items-center justify-center border-t border-white/10 pt-8">
           <p className="mb-6 text-slate-400">Or connect professionally</p>
           <a
-            href="https://www.linkedin.com"
+            href="https://www.linkedin.com/in/amari-b-ab932b176/"
             target="_blank"
             rel="noreferrer"
             className="group grid h-16 w-16 place-items-center rounded-2xl bg-blue-600 text-white transition hover:-translate-y-1 hover:bg-blue-500 hover:shadow-xl hover:shadow-blue-500/30"
