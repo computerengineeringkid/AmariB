@@ -1,45 +1,119 @@
-import { ArrowUpRight, FileText, Github, Palette, Youtube } from 'lucide-react'
+import { ArrowUpRight, FileText, Github, User, Users, Wrench, CheckCircle } from 'lucide-react'
 
-const ProjectCard = ({ title, team, description, links }) => {
-  const badges = [
-    { key: 'github', label: 'GitHub', icon: Github, style: 'border-white/15 bg-white/5 hover:border-accent' },
-    { key: 'artstation', label: 'ArtStation', icon: Palette, style: 'border-accent/30 bg-accent/10 text-accent hover:border-accent/60 hover:text-white' },
-    { key: 'youtube', label: 'YouTube', icon: Youtube, style: 'border-rose-400/40 bg-rose-500/10 text-rose-200 hover:border-rose-300/80 hover:text-white' },
-    { key: 'docs', label: 'Google Docs', icon: FileText, style: 'border-gold/40 bg-gold/10 text-gold hover:border-gold/70 hover:text-ink' },
+/**
+ * ProjectCard component for SIP410 Boards compliance
+ * Required fields: title, role, team, description, tools, links, meetsObjective (for objectives page)
+ */
+const ProjectCard = ({
+  title,
+  role,
+  team,
+  description,
+  tools = [],
+  links = {},
+  meetsObjective = [],
+  compact = false
+}) => {
+  const linkConfig = [
+    { key: 'github', label: 'GitHub', icon: Github, style: 'border-white/15 bg-white/5 hover:border-blue-400' },
+    { key: 'docs', label: 'Documentation', icon: FileText, style: 'border-amber-400/40 bg-amber-500/10 text-amber-200 hover:border-amber-300/80' },
   ]
 
+  const teamNames = Array.isArray(team) ? team.join(', ') : team
+
   return (
-    <div className="group relative overflow-hidden rounded-2xl border border-white/10 bg-white/5 p-6 shadow-card">
-      <div className="absolute inset-px rounded-2xl border border-white/5" aria-hidden />
-      <div className="relative flex items-start justify-between gap-4">
-        <div>
-          <p className="text-xs uppercase tracking-[0.25em] text-slate-400">Project</p>
-          <h3 className="text-xl font-semibold text-white">{title}</h3>
-          <p className="text-sm text-slate-300">Team Members: {team}</p>
+    <div className="group relative overflow-hidden rounded-2xl border border-white/10 bg-white/5 p-6 transition hover:border-blue-500/30 hover:bg-white/[0.07]">
+      {/* Header */}
+      <div className="flex items-start justify-between gap-4">
+        <div className="flex-1">
+          <h4 className="text-lg font-semibold text-white leading-tight">{title}</h4>
+
+          {/* Role */}
+          {role && (
+            <div className="mt-2 flex items-center gap-2 text-sm text-blue-400">
+              <User size={14} />
+              <span>{role}</span>
+            </div>
+          )}
+
+          {/* Team Members */}
+          {teamNames && (
+            <div className="mt-1 flex items-center gap-2 text-sm text-slate-400">
+              <Users size={14} />
+              <span>{teamNames}</span>
+            </div>
+          )}
         </div>
-        <span className="rounded-full bg-accent/10 p-2 text-accent">
-          <ArrowUpRight size={16} />
-        </span>
-      </div>
 
-      <p className="relative mt-4 text-sm leading-relaxed text-slate-200 line-clamp-4">{description}</p>
-
-      <div className="relative mt-5 flex flex-wrap gap-2">
-        {badges.map(({ key, label, icon: Icon, style }) =>
-          links?.[key] ? (
-            <a
-              key={key}
-              href={links[key]}
-              target="_blank"
-              rel="noreferrer"
-              className={`inline-flex items-center gap-2 rounded-full border px-3 py-2 text-xs font-semibold transition duration-200 hover:-translate-y-0.5 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent ${style}`}
-            >
-              <Icon size={14} />
-              {label}
-            </a>
-          ) : null,
+        {Object.keys(links).length > 0 && (
+          <span className="shrink-0 rounded-full bg-blue-500/10 p-2 text-blue-400">
+            <ArrowUpRight size={16} />
+          </span>
         )}
       </div>
+
+      {/* Description */}
+      <p className={`mt-4 text-sm leading-relaxed text-slate-300 ${compact ? 'line-clamp-3' : ''}`}>
+        {description}
+      </p>
+
+      {/* Tools/Software */}
+      {tools.length > 0 && (
+        <div className="mt-4">
+          <div className="flex items-center gap-2 text-xs font-medium text-slate-400 mb-2">
+            <Wrench size={12} />
+            <span>Tools & Technologies</span>
+          </div>
+          <div className="flex flex-wrap gap-1.5">
+            {tools.map((tool) => (
+              <span
+                key={tool}
+                className="rounded-md bg-slate-800/80 px-2 py-1 text-xs text-slate-300"
+              >
+                {tool}
+              </span>
+            ))}
+          </div>
+        </div>
+      )}
+
+      {/* How This Meets the Objective */}
+      {meetsObjective.length > 0 && (
+        <div className="mt-4 rounded-xl bg-blue-500/5 border border-blue-500/10 p-4">
+          <div className="flex items-center gap-2 text-xs font-medium text-blue-400 mb-2">
+            <CheckCircle size={12} />
+            <span>How This Meets the Objective</span>
+          </div>
+          <ul className="space-y-1.5">
+            {meetsObjective.map((point, index) => (
+              <li key={index} className="flex items-start gap-2 text-sm text-slate-300">
+                <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-blue-400" />
+                <span>{point}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
+      )}
+
+      {/* Links */}
+      {Object.keys(links).length > 0 && (
+        <div className="mt-5 flex flex-wrap gap-2">
+          {linkConfig.map(({ key, label, icon: Icon, style }) =>
+            links[key] ? (
+              <a
+                key={key}
+                href={links[key]}
+                target="_blank"
+                rel="noreferrer"
+                className={`inline-flex items-center gap-2 rounded-full border px-3 py-2 text-xs font-semibold transition duration-200 hover:-translate-y-0.5 ${style}`}
+              >
+                <Icon size={14} />
+                {label}
+              </a>
+            ) : null
+          )}
+        </div>
+      )}
     </div>
   )
 }

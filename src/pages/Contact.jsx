@@ -1,72 +1,57 @@
-import { Linkedin, Send } from 'lucide-react'
+import { Linkedin, MessageCircle, ArrowUpRight } from 'lucide-react'
 
+/**
+ * Contact Page - SIP410 Boards Compliant
+ * Uses LinkedIn for professional contact (no personal phone/email displayed)
+ */
 const Contact = () => {
   return (
     <div className="mx-auto max-w-2xl">
       <div className="mb-12 text-center">
         <h2 className="text-4xl font-bold text-white">Get in Touch</h2>
         <p className="mt-4 text-slate-400">
-          Have a question or want to work together? Send me a message.
+          Interested in connecting? Reach out through LinkedIn for professional inquiries.
         </p>
       </div>
 
       <div className="rounded-3xl border border-white/10 bg-white/5 p-8 shadow-2xl md:p-12">
-        <form className="space-y-6">
-          <div>
-            <label htmlFor="name" className="mb-2 block text-sm font-medium text-slate-300">
-              Name
-            </label>
-            <input
-              type="text"
-              id="name"
-              className="w-full rounded-xl border border-white/10 bg-slate-900/50 px-4 py-3 text-white placeholder-slate-500 focus:border-blue-500 focus:outline-none focus:ring-1 focus:ring-blue-500"
-              placeholder="Your Name"
-            />
+        {/* LinkedIn CTA */}
+        <div className="text-center">
+          <div className="inline-flex items-center justify-center h-20 w-20 rounded-2xl bg-blue-500/10 text-blue-400 mb-6">
+            <MessageCircle size={40} />
           </div>
 
-          <div>
-            <label htmlFor="email" className="mb-2 block text-sm font-medium text-slate-300">
-              Email
-            </label>
-            <input
-              type="email"
-              id="email"
-              className="w-full rounded-xl border border-white/10 bg-slate-900/50 px-4 py-3 text-white placeholder-slate-500 focus:border-blue-500 focus:outline-none focus:ring-1 focus:ring-blue-500"
-              placeholder="your@email.com"
-            />
-          </div>
+          <h3 className="text-2xl font-bold text-white mb-4">Let's Connect</h3>
 
-          <div>
-            <label htmlFor="message" className="mb-2 block text-sm font-medium text-slate-300">
-              Message
-            </label>
-            <textarea
-              id="message"
-              rows={4}
-              className="w-full rounded-xl border border-white/10 bg-slate-900/50 px-4 py-3 text-white placeholder-slate-500 focus:border-blue-500 focus:outline-none focus:ring-1 focus:ring-blue-500"
-              placeholder="Your message..."
-            ></textarea>
-          </div>
+          <p className="text-slate-400 mb-8 max-w-md mx-auto">
+            I'm always open to discussing new opportunities, collaborations,
+            or answering questions about my work.
+          </p>
 
-          <button
-            type="submit"
-            className="flex w-full items-center justify-center gap-2 rounded-xl bg-blue-600 px-8 py-4 font-semibold text-white transition hover:bg-blue-500 hover:shadow-lg hover:shadow-blue-500/25"
-          >
-            <Send size={20} />
-            Send Message
-          </button>
-        </form>
-
-        <div className="mt-12 flex flex-col items-center justify-center border-t border-white/10 pt-8">
-          <p className="mb-6 text-slate-400">Or connect professionally</p>
           <a
             href="https://www.linkedin.com/in/amari-b-ab932b176/"
             target="_blank"
             rel="noreferrer"
-            className="group grid h-16 w-16 place-items-center rounded-2xl bg-blue-600 text-white transition hover:-translate-y-1 hover:bg-blue-500 hover:shadow-xl hover:shadow-blue-500/30"
+            className="inline-flex items-center gap-3 rounded-full bg-blue-600 px-8 py-4 font-semibold text-white transition hover:bg-blue-500 hover:shadow-lg hover:shadow-blue-500/25 hover:-translate-y-0.5"
           >
-            <Linkedin size={32} />
+            <Linkedin size={24} />
+            <span>Connect on LinkedIn</span>
+            <ArrowUpRight size={18} />
           </a>
+        </div>
+
+        {/* Additional Info */}
+        <div className="mt-12 pt-8 border-t border-white/10">
+          <div className="grid gap-4 sm:grid-cols-2">
+            <div className="rounded-xl bg-white/5 p-6 text-center">
+              <div className="text-sm font-medium text-slate-400 mb-1">Location</div>
+              <div className="text-white">Las Vegas, Nevada</div>
+            </div>
+            <div className="rounded-xl bg-white/5 p-6 text-center">
+              <div className="text-sm font-medium text-slate-400 mb-1">Availability</div>
+              <div className="text-white">Open to Opportunities</div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
