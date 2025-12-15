@@ -40,9 +40,22 @@ const Layout = () => {
         </section>
       </main>
       <footer className="border-t border-white/5 bg-slate-900 py-12 text-center">
-        <div className="space-y-2">
-          <p className="text-sm text-slate-400">© 2025 Amari Bullard. All Rights Reserved.</p>
-          <p className="text-xs text-slate-500 uppercase tracking-widest">Website by Saguaro Interactive</p>
+        <div className="space-y-4">
+          {/* Quick Access for SMEs */}
+          <div className="flex justify-center gap-6 text-sm">
+            <a
+              href="https://docs.google.com/document/d/1EmJlpqOfpms8y7LcIcwE_At-CgZ-jYeZzMfL4AKdczY/edit?usp=sharing"
+              target="_blank"
+              rel="noreferrer"
+              className="text-blue-400 hover:text-blue-300 transition"
+            >
+              Statement of Intent
+            </a>
+          </div>
+          <div className="space-y-2">
+            <p className="text-sm text-slate-400">© 2025 Amari Bullard. All Rights Reserved.</p>
+            <p className="text-xs text-slate-500 uppercase tracking-widest">Website by Saguaro Interactive</p>
+          </div>
         </div>
       </footer>
     </div>

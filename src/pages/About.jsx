@@ -1,4 +1,4 @@
-import { Briefcase, Star, GraduationCap } from 'lucide-react'
+import { Briefcase, Star, GraduationCap, FileText, ArrowUpRight } from 'lucide-react'
 
 /**
  * About Page - Personal information, experience, and skills
@@ -131,6 +131,35 @@ const About = () => {
               {skill}
             </span>
           ))}
+        </div>
+      </section>
+
+      {/* Professional Materials */}
+      <section>
+        <h3 className="mb-8 flex items-center gap-3 text-2xl font-bold text-white">
+          <FileText className="text-blue-500" />
+          Professional Materials
+        </h3>
+        <div className="rounded-2xl border border-white/10 bg-white/5 p-6">
+          <a
+            href="https://docs.google.com/document/d/1EmJlpqOfpms8y7LcIcwE_At-CgZ-jYeZzMfL4AKdczY/edit?usp=sharing"
+            target="_blank"
+            rel="noreferrer"
+            className="group flex items-center justify-between rounded-xl border border-white/10 bg-slate-900/50 p-5 transition hover:border-blue-500/50 hover:bg-slate-800/50"
+          >
+            <div className="flex items-center gap-4">
+              <div className="grid h-12 w-12 place-items-center rounded-xl bg-blue-500/10 text-blue-400">
+                <FileText size={24} />
+              </div>
+              <div>
+                <h4 className="font-semibold text-white group-hover:text-blue-400 transition">
+                  Statement of Intent
+                </h4>
+                <p className="text-sm text-slate-400">Google Doc</p>
+              </div>
+            </div>
+            <ArrowUpRight className="text-slate-400 group-hover:text-blue-400 transition" size={20} />
+          </a>
         </div>
       </section>
     </div>
