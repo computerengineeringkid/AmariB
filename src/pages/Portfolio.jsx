@@ -4,6 +4,23 @@ import ProjectCard from '../components/ProjectCard'
 const Portfolio = () => {
   const [activeTab, setActiveTab] = useState('acs')
 
+  const docs = {
+    brandStrategy: "https://drive.google.com/file/d/1SM_r2CKPB5ZzJx3m0k-G_q7r1MvTjeAR/view",
+    cyberInsurance: "https://drive.google.com/file/d/1g74MuNCL57Sib_mgiOHQ3k_dlvo856yg/view",
+    disasterRecovery: "https://drive.google.com/file/d/13r4168gyp4xStIieYZYZoD7SzPhN3-Jg/view",
+    enterpriseNetwork: "https://drive.google.com/file/d/1eAK_32XcYHUESSHNI2kCyq3O8F5iQw18/view",
+    interpawsBusinessPlan: "https://drive.google.com/file/d/1Otixbxzk_RsNBku2o4hOkIPUtkQUnCk8/view",
+    interpawsMasterPlan: "https://drive.google.com/file/d/1FaGi4FUeZXV0l-57_3T8iSZh-o6ArrFO/view"
+  }
+
+  const github = {
+    interpaws: "https://github.com/computerengineeringkid/Interpaws",
+    canvasTracker: "https://github.com/computerengineeringkid/canvas-tracker-pwaMAIN",
+    animalHospital: "https://github.com/computerengineeringkid/animalhospitaloop",
+    audiobookWorld: "https://github.com/computerengineeringkid/audiobook-world-mobile",
+    emergencySos: "https://github.com/computerengineeringkid/emergency-sos-iot"
+  }
+
   const majors = [
     { id: 'acs', label: 'Advancing Computer Science' },
     { id: 'bus', label: 'Business Technology' },
@@ -47,8 +64,8 @@ const Portfolio = () => {
           team: "Amari Bullard",
           description: "Full-stack VPMS with documented 18-day sprint methodology, E2E testing guide, deployment phases, and iterative development. Python/FastAPI backend, Next.js frontend, PostgreSQL with pgvector.",
           links: {
-            github: "https://github.com/computerengineeringkid/Interpaws",
-            docs: "/docs/Interpaws_Master_Plan.pdf"
+            github: github.interpaws,
+            docs: docs.interpawsMasterPlan
           }
         },
         {
@@ -56,7 +73,7 @@ const Portfolio = () => {
           team: "Amari Bullard",
           description: "Assignment tracking PWA with Flask backend, SQLAlchemy ORM, APScheduler for background tasks, and Discord webhook notifications. Full development documentation included.",
           links: {
-            github: "https://github.com/computerengineeringkid/canvas-tracker-pwaMAIN"
+            github: github.canvasTracker
           }
         }
       ]
@@ -70,7 +87,7 @@ const Portfolio = () => {
           team: "Amari Bullard",
           description: "Demonstrates proficiency across C++ (Visual Studio), Python (PyCharm/VS Code), JavaScript/React (VS Code), and C/Arduino IDE. Projects span embedded systems to full-stack web applications.",
           links: {
-            github: "https://github.com/computerengineeringkid/Interpaws"
+            github: github.interpaws
           }
         },
         {
@@ -78,7 +95,7 @@ const Portfolio = () => {
           team: "Amari Bullard",
           description: "IoT emergency alert system built with C++ in Arduino IDE. Uses M5StickC Plus, WiFi library, and HTTP client to send Discord notifications on fall detection.",
           links: {
-            github: "https://github.com/computerengineeringkid/emergency-sos-iot"
+            github: github.emergencySos
           }
         }
       ]
@@ -92,7 +109,7 @@ const Portfolio = () => {
           team: "Amari Bullard",
           description: "PostgreSQL with pgvector for AI-powered vector similarity search. Implements embedding storage, cosine similarity matching, and an AI feedback loop that learns from successful appointments.",
           links: {
-            github: "https://github.com/computerengineeringkid/Interpaws"
+            github: github.interpaws
           }
         },
         {
@@ -100,7 +117,7 @@ const Portfolio = () => {
           team: "Amari Bullard",
           description: "SQLite database with SQLAlchemy ORM tracking courses, assignments, grades, and notification history. Syncs with Canvas LMS API for real-time data updates.",
           links: {
-            github: "https://github.com/computerengineeringkid/canvas-tracker-pwaMAIN"
+            github: github.canvasTracker
           }
         }
       ]
@@ -114,7 +131,7 @@ const Portfolio = () => {
           team: "Amari Bullard",
           description: "React Native cross-platform audiobook app with Expo SDK 51. Features text-to-speech, sentence highlighting, AsyncStorage persistence. Runs on iOS, Android, and Web.",
           links: {
-            github: "https://github.com/computerengineeringkid/audiobook-world-mobile"
+            github: github.audiobookWorld
           }
         },
         {
@@ -122,7 +139,7 @@ const Portfolio = () => {
           team: "Amari Bullard",
           description: "Embedded IoT device using M5StickC Plus microcontroller. Integrates accelerometer for fall detection, WiFi networking, and HTTP webhook integration with Discord.",
           links: {
-            github: "https://github.com/computerengineeringkid/emergency-sos-iot"
+            github: github.emergencySos
           }
         },
         {
@@ -130,7 +147,7 @@ const Portfolio = () => {
           team: "Amari Bullard",
           description: "Progressive Web App installable on mobile/desktop. Service worker for offline capability, background sync every 30 minutes.",
           links: {
-            github: "https://github.com/computerengineeringkid/canvas-tracker-pwaMAIN"
+            github: github.canvasTracker
           }
         }
       ]
@@ -144,7 +161,7 @@ const Portfolio = () => {
           team: "Amari Bullard",
           description: "C++ console application demonstrating OOP concepts. Features abstract base class DepartmentAssigner with pure virtual functions, AnimalHospital derived class implementing polymorphic behavior, and encapsulated department logic.",
           links: {
-            github: "https://github.com/computerengineeringkid/animalhospitaloop"
+            github: github.animalHospital
           }
         },
         {
@@ -152,7 +169,7 @@ const Portfolio = () => {
           team: "Amari Bullard",
           description: "Python OOP with SQLAlchemy ORM. Class hierarchy for Clinic, Staff, Client, Pet, Booking, and AIFeedbackLog with relationships, inheritance patterns, and encapsulated business logic.",
           links: {
-            github: "https://github.com/computerengineeringkid/Interpaws"
+            github: github.interpaws
           }
         }
       ]
@@ -166,7 +183,7 @@ const Portfolio = () => {
           team: "Amari Bullard",
           description: "Implements vectors (pgvector embeddings), hash tables (Python dictionaries for caching), linked data (SQLAlchemy relationships), and tree structures (nested JSON responses).",
           links: {
-            github: "https://github.com/computerengineeringkid/Interpaws"
+            github: github.interpaws
           }
         },
         {
@@ -174,7 +191,7 @@ const Portfolio = () => {
           team: "Amari Bullard",
           description: "SQLAlchemy models with foreign key relationships, indexed queries, and efficient data retrieval patterns. Courses → Assignments → Notifications hierarchy.",
           links: {
-            github: "https://github.com/computerengineeringkid/canvas-tracker-pwaMAIN"
+            github: github.canvasTracker
           }
         }
       ]
@@ -191,8 +208,8 @@ const Portfolio = () => {
           team: "Amari Bullard",
           description: "Three iterations of product strategy documentation covering feature roadmaps, technical architecture decisions, AI integration plans, and development timelines.",
           links: {
-            github: "https://github.com/computerengineeringkid/Interpaws",
-            docs: "/docs/Interpaws_Master_Plan.pdf"
+            github: github.interpaws,
+            docs: docs.interpawsMasterPlan
           }
         },
         {
@@ -200,7 +217,7 @@ const Portfolio = () => {
           team: "Amari Bullard",
           description: "Formal business plan including product/service plan, market analysis, competitive landscape, organization structure, and testing procedures.",
           links: {
-            docs: "/docs/Interpaws_Business_Plan.pdf"
+            docs: docs.interpawsBusinessPlan
           }
         }
       ]
@@ -214,7 +231,7 @@ const Portfolio = () => {
           team: "Amari Bullard",
           description: "Marketing strategy for Interpaws including advertising mix (Google Ads, LinkedIn, conferences), social media strategy (Facebook, Instagram, LinkedIn), launch timeline phases, and KPI definitions.",
           links: {
-            docs: "/docs/Brand_Strategy_Interpaws.pdf"
+            docs: docs.brandStrategy
           }
         },
         {
@@ -222,7 +239,7 @@ const Portfolio = () => {
           team: "Amari Bullard",
           description: "Pre-launch, beta, pilot expansion, and public launch phases with specific tasks, marketing budget allocation, and conversion tracking.",
           links: {
-            docs: "/docs/Interpaws_Business_Plan.pdf"
+            docs: docs.interpawsBusinessPlan
           }
         }
       ]
@@ -236,8 +253,8 @@ const Portfolio = () => {
           team: "Amari Bullard",
           description: "AI-assisted sprint methodology with daily goals, context-switching for ADHD optimization, iterative development, daily review/debug sessions, and continuous integration practices.",
           links: {
-            github: "https://github.com/computerengineeringkid/Interpaws",
-            docs: "/docs/Interpaws_Master_Plan.pdf"
+            github: github.interpaws,
+            docs: docs.interpawsMasterPlan
           }
         }
       ]
@@ -251,7 +268,7 @@ const Portfolio = () => {
           team: "Amari Bullard",
           description: "Saguaro Interactive LLC legal structure, SaaS pricing model ($3000 setup + $300/month), IP protection strategy (trademarks, trade secrets), market analysis, and risk mitigation.",
           links: {
-            docs: "/docs/Interpaws_Business_Plan.pdf"
+            docs: docs.interpawsBusinessPlan
           }
         },
         {
@@ -259,7 +276,7 @@ const Portfolio = () => {
           team: "Amari Bullard",
           description: "Marketing budget allocation ($100/week for 12 weeks), channel strategy, content themes, lead handling SLA (24-hour reply, 72-hour demo), and CRM implementation.",
           links: {
-            docs: "/docs/Brand_Strategy_Interpaws.pdf"
+            docs: docs.brandStrategy
           }
         }
       ]
@@ -273,7 +290,7 @@ const Portfolio = () => {
           team: "Amari Bullard",
           description: "Designed organizational structure including Founder/CEO, Lead Engineer, Product Managers, Marketing Lead, Customer Support, and Advisory Board roles with defined responsibilities.",
           links: {
-            docs: "/docs/Interpaws_Business_Plan.pdf"
+            docs: docs.interpawsBusinessPlan
           }
         },
         {
@@ -293,7 +310,7 @@ const Portfolio = () => {
           team: "Amari Bullard",
           description: "Admin dashboard with calendar views, booking analytics, staff utilization metrics, and revenue tracking. Success metrics include activation time, wait time variance, and conversion rates.",
           links: {
-            github: "https://github.com/computerengineeringkid/Interpaws"
+            github: github.interpaws
           }
         },
         {
@@ -301,7 +318,7 @@ const Portfolio = () => {
           team: "Amari Bullard",
           description: "Defined performance metrics including social media engagement, follower growth, CTR, demo sign-ups, conversion rates, and customer satisfaction scores.",
           links: {
-            docs: "/docs/Brand_Strategy_Interpaws.pdf"
+            docs: docs.brandStrategy
           }
         }
       ]
@@ -318,7 +335,7 @@ const Portfolio = () => {
           team: "Amari Bullard",
           description: "Large-scale enterprise network design featuring Cisco Nexus 9000 switches, Cisco 3100 series firewall, dual ISP redundancy, and branch office connectivity. Includes cost analysis and implementation phases.",
           links: {
-            docs: "/docs/Enterprise_Network_Design.pdf"
+            docs: docs.enterpriseNetwork
           }
         },
         {
@@ -326,7 +343,7 @@ const Portfolio = () => {
           team: "Amari Bullard",
           description: "DR plan for 200-employee IT company with data center, satellite office VPN, backup strategies, failover systems, and emergency response procedures.",
           links: {
-            docs: "/docs/Disaster_Recovery_Plan.pdf"
+            docs: docs.disasterRecovery
           }
         }
       ]
@@ -340,8 +357,8 @@ const Portfolio = () => {
           team: "Amari Bullard",
           description: "Docker containerization, Vercel frontend deployment, cloud PostgreSQL provisioning, and environment variable management for production infrastructure.",
           links: {
-            github: "https://github.com/computerengineeringkid/Interpaws",
-            docs: "/docs/Interpaws_Master_Plan.pdf"
+            github: github.interpaws,
+            docs: docs.interpawsMasterPlan
           }
         },
         {
@@ -349,7 +366,7 @@ const Portfolio = () => {
           team: "Amari Bullard",
           description: "Cloud backup implementation using AWS/Azure for geographic redundancy, on-demand scaling, and offsite data protection.",
           links: {
-            docs: "/docs/Disaster_Recovery_Plan.pdf"
+            docs: docs.disasterRecovery
           }
         }
       ]
@@ -363,7 +380,7 @@ const Portfolio = () => {
           team: "Amari Bullard",
           description: "Identified and resolved network issues including latency exceeding 100ms during peak hours, VLAN capacity limitations, and QoS configuration for traffic prioritization.",
           links: {
-            docs: "/docs/Enterprise_Network_Design.pdf"
+            docs: docs.enterpriseNetwork
           }
         }
       ]
@@ -377,7 +394,7 @@ const Portfolio = () => {
           team: "Amari Bullard",
           description: "Comprehensive backup/recovery procedures including daily incremental backups, weekly full backups, UPS failover, generator integration, and documented escalation paths.",
           links: {
-            docs: "/docs/Disaster_Recovery_Plan.pdf"
+            docs: docs.disasterRecovery
           }
         },
         {
@@ -385,7 +402,7 @@ const Portfolio = () => {
           team: "Amari Bullard",
           description: "Cisco Identity Services Engine (ISE) implementation for authentication and policy enforcement, role-based access controls, and audit logging.",
           links: {
-            docs: "/docs/Enterprise_Network_Design.pdf"
+            docs: docs.enterpriseNetwork
           }
         }
       ]
@@ -399,7 +416,7 @@ const Portfolio = () => {
           team: "Amari Bullard",
           description: "IoT networking solution integrating embedded device WiFi, HTTP client communication, and Discord webhook API. Demonstrates traditional networking with IoT and mobile notification integration.",
           links: {
-            github: "https://github.com/computerengineeringkid/emergency-sos-iot"
+            github: github.emergencySos
           }
         },
         {
@@ -407,7 +424,7 @@ const Portfolio = () => {
           team: "Amari Bullard",
           description: "Discord webhook implementation for real-time notifications, demonstrating API integration between web services and mobile notification platforms.",
           links: {
-            github: "https://github.com/computerengineeringkid/canvas-tracker-pwaMAIN"
+            github: github.canvasTracker
           }
         }
       ]
@@ -421,7 +438,7 @@ const Portfolio = () => {
           team: "Amari Bullard",
           description: "Comprehensive security assessment for Sentinel Shield including MFA implementation, EDR deployment, incident response procedures, encryption standards, and regulatory compliance (GLBA, PCI DSS).",
           links: {
-            docs: "/docs/Cyber_Insurance_Policy.pdf"
+            docs: docs.cyberInsurance
           }
         },
         {
@@ -429,7 +446,7 @@ const Portfolio = () => {
           team: "Amari Bullard",
           description: "IPsec VPN tunnels, end-to-end encryption, firewall configuration, and security monitoring with Cisco Secure Network Analytics.",
           links: {
-            docs: "/docs/Enterprise_Network_Design.pdf"
+            docs: docs.enterpriseNetwork
           }
         }
       ]
