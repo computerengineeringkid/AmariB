@@ -169,6 +169,46 @@ export const projects = {
     tools: ["Access Control Policy", "AES-256 Encryption", "IDS/SIEM Monitoring", "Audit/Log Review", "Incident Response Planning"],
     links: { docs: docs.enterpriseSecurityPlan },
     featured: false
+  },
+  us93AlertsBot: {
+    id: "us93AlertsBot",
+    title: "US93 Alerts Bot",
+    role: "Sole Developer",
+    team: ["Amari Bullard"],
+    description: "Python automation script that fetches real-time traffic data from the Arizona 511 API, filters for US-93 highway incidents, and sends Discord webhook notifications. Uses GitHub Actions for scheduled execution every 15 minutes and file-based state persistence to avoid duplicate alerts.",
+    tools: ["Python", "GitHub Actions", "Discord Webhooks", "REST API", "JSON", "File I/O"],
+    links: { github: "https://github.com/computerengineeringkid/us93-alerts" },
+    featured: false
+  },
+  thingspeakIot: {
+    id: "thingspeakIot",
+    title: "Thingspeak IoT Data Logger",
+    role: "Sole Developer",
+    team: ["Amari Bullard"],
+    description: "M5StickC Plus IoT application that collects sensor data and transmits it to ThingSpeak cloud platform for real-time visualization. Features WiFi connectivity, ThingSpeak API integration for data upload, and LCD display for local feedback. Demonstrates complete IoT data pipeline from device to cloud dashboard.",
+    tools: ["C++", "Arduino IDE", "M5StickC Plus", "ThingSpeak API", "WiFi", "HTTP Client"],
+    links: { github: "https://github.com/computerengineeringkid/Lab-5.1--Using-Thingspeak-API-to-collect-and-visualize-data" },
+    featured: false
+  },
+  ninjaPirateOop: {
+    id: "ninjaPirateOop",
+    title: "Ninja vs Pirate OOP Demo",
+    role: "Sole Developer",
+    team: ["Amari Bullard"],
+    description: "C++ console application demonstrating all four OOP pillars. Features abstract Character base class with pure virtual specialAction() method, Ninja and Pirate derived classes with polymorphic behavior, encapsulated health management with validation, and inheritance hierarchy for code reuse.",
+    tools: ["C++", "Visual Studio", "Object-Oriented Design"],
+    links: { github: "https://github.com/computerengineeringkid/oop-demo-ninja-pirate" },
+    featured: false
+  },
+  mazeGenerator: {
+    id: "mazeGenerator",
+    title: "Maze Generator",
+    role: "Sole Developer",
+    team: ["Amari Bullard"],
+    description: "C++ maze generation program using recursive depth-first search algorithm. Implements 2D vector grid for spatial data representation, Mersenne Twister for random direction shuffling, and recursive backtracking for path carving. Demonstrates dynamic memory allocation, bounds checking, and algorithm implementation.",
+    tools: ["C++", "Visual Studio", "STL Vectors", "Recursion", "Mersenne Twister RNG"],
+    links: { github: "https://github.com/computerengineeringkid/maze-generator" },
+    featured: false
   }
 }
 
@@ -203,21 +243,21 @@ export const acsObjectives = [
     text: objectiveTexts.acs[1],
     projects: [
       {
-        ...projects.interpaws,
-        meetsObjective: [
-          "Python backend development using PyCharm and VS Code IDEs",
-          "JavaScript/TypeScript frontend development in VS Code with Next.js",
-          "SQL database design and querying in PostgreSQL environment",
-          "Docker containerization across multiple development environments"
-        ]
-      },
-      {
         ...projects.emergencySos,
         meetsObjective: [
           "C++ firmware development using Arduino IDE for M5StickC",
           "Embedded systems programming distinct from web development",
           "Hardware-software integration requiring different toolchain",
           "Low-level programming contrasting with high-level Python/JS work"
+        ]
+      },
+      {
+        ...projects.us93AlertsBot,
+        meetsObjective: [
+          "Python development distinct from C++/JavaScript used in other projects",
+          "GitHub Actions CI/CD environment for automated execution",
+          "REST API integration with Arizona 511 traffic system",
+          "Different toolchain: Python scripts vs compiled applications"
         ]
       }
     ]
@@ -236,12 +276,12 @@ export const acsObjectives = [
         ]
       },
       {
-        ...projects.canvasTracker,
+        ...projects.thingspeakIot,
         meetsObjective: [
-          "SQLite database tracking courses, assignments, and notification history",
-          "Canvas LMS API integration for real-time data synchronization",
-          "Data-driven notifications based on due date calculations",
-          "Persistent storage enabling offline functionality and data analysis"
+          "ThingSpeak API integration for cloud data storage and visualization",
+          "Real-time sensor data collection and transmission",
+          "Data-driven dashboard updates based on device input",
+          "IoT data pipeline: embedded device → WiFi → cloud API → visualization"
         ]
       }
     ]
@@ -293,12 +333,12 @@ export const acsObjectives = [
         ]
       },
       {
-        ...projects.interpaws,
+        ...projects.ninjaPirateOop,
         meetsObjective: [
-          "SQLAlchemy ORM with class hierarchy (Clinic, Staff, Client, Pet, Booking)",
-          "Encapsulated business logic within model classes",
-          "Relationship patterns implementing association and composition",
-          "Polymorphic query patterns using SQLAlchemy inheritance"
+          "Abstract base class Character with pure virtual specialAction() function",
+          "Polymorphic behavior through Ninja and Pirate derived class overrides",
+          "Encapsulation with private health member and validated setter",
+          "Inheritance hierarchy demonstrating code reuse and extensibility"
         ]
       }
     ]
@@ -308,21 +348,21 @@ export const acsObjectives = [
     text: objectiveTexts.acs[5],
     projects: [
       {
-        ...projects.interpaws,
-        meetsObjective: [
-          "Vectors: pgvector embeddings for AI similarity search",
-          "Hash tables: Python dictionaries for caching and fast lookups",
-          "Linked data: SQLAlchemy relationships connecting related entities",
-          "Tree structures: Nested JSON responses for hierarchical API data"
-        ]
-      },
-      {
         ...projects.canvasTracker,
         meetsObjective: [
           "Relational models with foreign key relationships (Course → Assignment)",
           "Indexed queries for efficient data retrieval performance",
           "Hierarchical data: Courses → Assignments → Notifications structure",
           "Queue-based notification scheduling with APScheduler"
+        ]
+      },
+      {
+        ...projects.mazeGenerator,
+        meetsObjective: [
+          "2D vector grid (std::vector<std::vector<char>>) for spatial data representation",
+          "Recursive depth-first search algorithm for maze generation",
+          "Stack-based backtracking through recursion call stack",
+          "Dynamic memory management with STL containers"
         ]
       }
     ]
