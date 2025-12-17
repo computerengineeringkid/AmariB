@@ -307,15 +307,6 @@ export const acsObjectives = [
           "Hardware platform with accelerometer sensors and WiFi networking",
           "Cross-platform notification delivery to Discord mobile app"
         ]
-      },
-      {
-        ...projects.canvasTracker,
-        meetsObjective: [
-          "Progressive Web App installable on mobile and desktop devices",
-          "Service worker enabling offline capability across platforms",
-          "Responsive design adapting to mobile, tablet, and desktop screens",
-          "Background sync every 30 minutes regardless of active tab"
-        ]
       }
     ]
   },
