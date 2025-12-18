@@ -531,7 +531,7 @@ export const netObjectives = [
         team: ["Amari Bullard"],
         description: "Designed a dual-subnet network topology for a medium-sized business using Cisco Packet Tracer. Configured routers, switches, and firewalls to segment traffic between departments (192.168.1.0/24 and 192.168.2.0/24).",
         tools: ["Cisco Packet Tracer", "Router Configuration", "Switch Configuration", "Firewall Rules", "VLAN Segmentation"],
-        links: {},
+        links: { docs: "https://docs.google.com/document/d/1W8vsx51I_V4ufXuEPHk67XDgV5DFUHM7/edit?usp=sharing&ouid=115978480032856245481&rtpof=true&sd=true" },
         meetsObjective: [
           "Analyzed business requirements for network segmentation between departments",
           "Designed dual-subnet architecture (192.168.1.0/24 and 192.168.2.0/24)",
@@ -591,7 +591,7 @@ export const netObjectives = [
         team: ["Amari Bullard"],
         description: "Resolved a critical service outage for client 'PR Development Group' following a registrar migration. Identified stale DNS zone records pointing to decommissioned hosts and restored functionality by reconfiguring A, CNAME, and MX records for Google Workspace.",
         tools: ["DNS Management", "Google Workspace", "A Records", "CNAME Records", "MX Records", "Domain Registrar"],
-        links: {},
+        links: { docs: "https://drive.google.com/drive/folders/1KwFyo8fMAk3yGi0cuSUwFuClKjDekvN_?usp=sharing" },
         meetsObjective: [
           "Identified stale DNS zone records causing service outage",
           "Diagnosed misconfiguration pointing to decommissioned hosts",
@@ -623,7 +623,7 @@ export const netObjectives = [
         team: ["Amari Bullard"],
         description: "Performed systems administration on Ubuntu servers by configuring UFW (Uncomplicated Firewall) to enforce strict access control policies, explicitly allowing SSH (Port 22) traffic while blocking unauthorized ingress.",
         tools: ["Ubuntu Server", "UFW", "SSH", "iptables", "Access Control", "Security Hardening"],
-        links: {},
+        links: { docs: "https://docs.google.com/document/d/1jzftMWrT-l26Ikttl_Qe-vJCFGEVGSfw/edit?usp=sharing&ouid=115978480032856245481&rtpof=true&sd=true" },
         meetsObjective: [
           "Configured UFW firewall for strict access control enforcement",
           "Implemented SSH access policies on Port 22",
