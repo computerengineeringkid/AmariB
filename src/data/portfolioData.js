@@ -500,7 +500,7 @@ export const busObjectives = [
         team: ["Amari Bullard"],
         description: "Formulated a leadership strategy focused on employee motivation and risk assessment, defining clear communication protocols to maintain team cohesion. Emphasized the importance of \"getting to know those who work with you\" to build a comfortable and productive work environment.",
         tools: ["Microsoft PowerPoint", "Leadership Strategy", "Team Management"],
-        links: {},
+        links: { docs: "https://docs.google.com/presentation/d/1RynUtyBCjJbf7rDyouT_A98ow73kqvDq/edit?usp=sharing&ouid=115978480032856245481&rtpof=true&sd=true" },
         meetsObjective: [
           "Formulated leadership strategy for employee motivation",
           "Defined risk assessment and communication protocols",
