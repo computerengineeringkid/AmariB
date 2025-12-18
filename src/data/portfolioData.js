@@ -2,14 +2,19 @@
 // Each project must have: title, role, team, description, tools, links, meetsObjective
 
 export const docs = {
-  brandStrategy: "https://drive.google.com/file/d/1SM_r2CKPB5ZzJx3m0k-G_q7r1MvTjeAR/view",
-  cyberInsurance: "https://drive.google.com/file/d/1g74MuNCL57Sib_mgiOHQ3k_dlvo856yg/view",
+  brandStrategy: "/documents/Brand Strategy & Market Launch for Interpaws.docx",
+  cyberInsurance: "/documents/Cyber Insurance Policy Evaluation.pdf",
   disasterRecovery: "https://drive.google.com/file/d/13r4168gyp4xStIieYZYZoD7SzPhN3-Jg/view",
   enterpriseNetwork: "https://drive.google.com/file/d/1eAK_32XcYHUESSHNI2kCyq3O8F5iQw18/view",
-  interpawsBusinessPlan: "https://drive.google.com/file/d/1Otixbxzk_RsNBku2o4hOkIPUtkQUnCk8/view",
+  interpawsBusinessPlan: "/documents/Interpaws finished business plan.pdf",
   interpawsMasterPlan: "https://drive.google.com/file/d/1FaGi4FUeZXV0l-57_3T8iSZh-o6ArrFO/view",
   nexatechAwsMigration: "https://drive.google.com/file/d/1g1zpoB8ByG_6Kl9bEhahlhuKjTK7rTWm/view?usp=sharing",
-  enterpriseSecurityPlan: "https://docs.google.com/document/d/1SkOjiSMdnFdjYyAwfkB-WZk8J4NZetb8/edit?usp=drive_link&ouid=110289498123879233388&rtpof=true&sd=true"
+  enterpriseSecurityPlan: "https://docs.google.com/document/d/1SkOjiSMdnFdjYyAwfkB-WZk8J4NZetb8/edit?usp=drive_link&ouid=110289498123879233388&rtpof=true&sd=true",
+  managementPresentation: "/documents/management.pptx",
+  applePortfolio: "/documents/Portfolio Project_ Apple, Inc.pdf",
+  appleStrategy: "/documents/Strategy Implementation and Evaluation_ Apple.pdf",
+  nexaTech: "/documents/NexaTech (1).pdf",
+  businessContinuity: "/documents/Business Continuity Plan Creation.docx"
 }
 
 export const github = {
@@ -57,7 +62,7 @@ export const projects = {
     team: ["Amari Bullard"],
     description: "Full-stack veterinary practice management system with AI-powered scheduling. Features an 18-day documented sprint methodology, E2E testing, and iterative deployment phases. Built with Python/FastAPI backend, Next.js frontend, and PostgreSQL with pgvector for AI similarity search.",
     tools: ["Python", "FastAPI", "Next.js", "React", "PostgreSQL", "pgvector", "Docker", "Ollama", "SQLAlchemy", "Tailwind CSS"],
-    links: { github: github.interpaws, docs: docs.interpawsMasterPlan },
+    links: { github: github.interpaws },
     featured: true
   },
   canvasTracker: {
@@ -208,6 +213,46 @@ export const projects = {
     description: "C++ maze generation program using recursive depth-first search algorithm. Implements 2D vector grid for spatial data representation, Mersenne Twister for random direction shuffling, and recursive backtracking for path carving. Demonstrates dynamic memory allocation, bounds checking, and algorithm implementation.",
     tools: ["C++", "Visual Studio", "STL Vectors", "Recursion", "Mersenne Twister RNG"],
     links: { github: "https://github.com/computerengineeringkid/maze-generator" },
+    featured: false
+  },
+  managementPresentation: {
+    id: "managementPresentation",
+    title: "Management Presentation",
+    role: "Business Strategist",
+    team: ["Amari Bullard"],
+    description: "Developed a strategic management framework outlining the necessity of planning to prevent organizational chaos. Defined the strategy for monitoring business practices to prevent inefficiencies.",
+    tools: ["Microsoft PowerPoint", "Strategic Planning", "Business Analysis"],
+    links: { docs: docs.managementPresentation },
+    featured: false
+  },
+  applePortfolio: {
+    id: "applePortfolio",
+    title: "Apple Strategic Analysis",
+    role: "Financial Analyst",
+    team: ["Amari Bullard"],
+    description: "Conducted a deep-dive financial analysis of Apple's balance sheets and cash flow statements to evaluate operational margins and organizational performance.",
+    tools: ["Financial Analysis", "Excel", "Balance Sheet Analysis", "Cash Flow Analysis"],
+    links: { docs: docs.applePortfolio },
+    featured: false
+  },
+  nexaTech: {
+    id: "nexaTech",
+    title: "NexaTech Cloud Migration",
+    role: "Cloud Architect",
+    team: ["Amari Bullard"],
+    description: "Designed a cloud infrastructure migration plan for a medium-sized enterprise, transitioning from on-premise to AWS. Assembled resources using Amazon VPC, EC2 Auto Scaling, and Lambda.",
+    tools: ["AWS VPC", "EC2", "Lambda", "Auto Scaling", "Cloud Architecture"],
+    links: { docs: docs.nexaTech },
+    featured: false
+  },
+  businessContinuity: {
+    id: "businessContinuity",
+    title: "Business Continuity Plan",
+    role: "Infrastructure Planner",
+    team: ["Amari Bullard"],
+    description: "Assembled a comprehensive business continuity and disaster recovery infrastructure plan. Defined resource requirements for AWS Backup, S3 redundancy, and established RTO/RPO objectives.",
+    tools: ["AWS Backup", "S3", "Disaster Recovery", "Business Continuity Planning"],
+    links: { docs: docs.businessContinuity },
     featured: false
   }
 }
@@ -366,13 +411,7 @@ export const busObjectives = [
     text: objectiveTexts.bus[0],
     projects: [
       {
-        id: "bus1-project1",
-        title: "Management Presentation",
-        role: "Business Strategist",
-        team: ["Amari Bullard"],
-        description: "Developed a strategic management framework outlining the necessity of planning (\"Plan out what you are going to do\") to prevent organizational chaos. Defined the strategy for monitoring business practices to prevent inefficiencies from running \"wild\".",
-        tools: ["Microsoft PowerPoint", "Strategic Planning", "Business Analysis"],
-        links: { docs: "https://docs.google.com/presentation/d/1RynUtyBCjJbf7rDyouT_A98ow73kqvDq/edit?usp=sharing&ouid=115978480032856245481&rtpof=true&sd=true" },
+        ...projects.managementPresentation,
         meetsObjective: [
           "Created strategic management framework for organizational planning",
           "Defined planning protocols to prevent organizational chaos",
@@ -381,17 +420,8 @@ export const busObjectives = [
         ]
       },
       {
-        id: "bus1-project2",
-        title: "Saguaro Interactive (Software Division)",
-        role: "Business Strategist",
-        team: ["Amari Bullard"],
-        description: "Authored a comprehensive Business Plan strategy that defines the product vision (\"Fewer bottlenecks, More care\") and the strategic roadmap for market entry. Documented the launch timeline across six distinct phases, from prototype refinement to public launch.",
-        tools: ["Microsoft Word", "Business Planning", "Market Strategy", "Product Roadmap"],
-        links: { 
-          live: "https://saguarointeractive.com/", 
-          demo: "https://interpaws.com/", 
-          docs: "https://docs.google.com/document/d/1NAa1nzV8lcNk9fwD24V-8Hpa-V0BvmEe/edit?usp=sharing&ouid=115978480032856245481&rtpof=true&sd=true" 
-        },
+        ...projects.brandStrategy,
+        title: "Interpaws Brand Strategy",
         meetsObjective: [
           "Authored comprehensive Business Plan with product vision",
           "Defined strategic roadmap for market entry",
@@ -406,25 +436,21 @@ export const busObjectives = [
     text: objectiveTexts.bus[1],
     projects: [
       {
-        ...projects.emergencySos,
-        title: "M5StickC SOS System",
-        description: "Assembled a hardware and network infrastructure using IoT microcontrollers (M5StickC Plus) and WiFi telemetry to support real-time emergency data transmission. Integrated accelerometer sensors and HTTP clients to create a functional safety device infrastructure.",
+        ...projects.nexaTech,
         meetsObjective: [
-          "Assembled hardware infrastructure using IoT microcontrollers",
-          "Established WiFi telemetry for real-time data transmission",
-          "Integrated accelerometer sensors and HTTP clients",
-          "Created functional safety device infrastructure"
+          "Assembled cloud infrastructure resources using Amazon VPC and EC2",
+          "Designed auto-scaling architecture for market scalability",
+          "Planned migration of enterprise resources from on-premise to cloud",
+          "Defined technical infrastructure requirements for business operations"
         ]
       },
       {
-        ...projects.canvasTracker,
-        title: "Canvas Tracker PWA",
-        description: "Built the backend infrastructure required for data synchronization, assembling Python APScheduler resources and Discord Webhooks to automate alerts. Established a service worker infrastructure to ensure the application functioned as a Progressive Web App (PWA).",
+        ...projects.businessContinuity,
         meetsObjective: [
-          "Built backend infrastructure for data synchronization",
-          "Assembled Python APScheduler and Discord Webhook resources",
-          "Automated alert systems for notifications",
-          "Established service worker infrastructure for PWA functionality"
+          "Assembled disaster recovery infrastructure using AWS Backup and S3",
+          "Defined resources needed to minimize downtime and financial loss",
+          "Established RTO/RPO metrics for infrastructure reliability",
+          "Created continuity strategy to protect organizational assets"
         ]
       }
     ]
@@ -434,25 +460,21 @@ export const busObjectives = [
     text: objectiveTexts.bus[2],
     projects: [
       {
-        ...projects.emergencySos,
-        title: "M5StickC SOS System",
-        description: "Applied lean prototyping principles to rapidly develop a Minimum Viable Product (MVP) for fall detection, iterating on sensor algorithms to minimize false positives. Utilized C++ and Arduino libraries to quickly test and validate the connectivity strategy.",
+        ...projects.interpaws,
         meetsObjective: [
-          "Applied lean prototyping principles for rapid MVP development",
-          "Iterated on sensor algorithms to minimize false positives",
-          "Utilized C++ and Arduino for quick testing and validation",
-          "Validated connectivity strategy through agile iteration"
+          "Applied Agile methodologies with 18-day documented sprint cycles",
+          "Utilized iterative deployment phases to refine product strategy",
+          "Implemented continuous feedback loops to align technology with mission",
+          "Demonstrated lean development by focusing on MVP features first"
         ]
       },
       {
-        ...projects.canvasTracker,
-        title: "Canvas Tracker PWA",
-        description: "Utilized iterative development to build a Progressive Web App, continuously integrating features like background sync and service workers to enhance the user experience. Adapted the product mission to solve immediate personal time-management needs through rapid software iteration.",
+        ...projects.emergencySos,
         meetsObjective: [
-          "Utilized iterative development for continuous feature integration",
-          "Implemented background sync and service workers incrementally",
-          "Adapted product mission through rapid software iteration",
-          "Applied agile approach to solve time-management needs"
+          "Applied lean prototyping to rapidly develop MVP",
+          "Iterated on sensor algorithms to minimize false positives",
+          "Utilized Arduino libraries for quick connectivity validation",
+          "Demonstrated rapid hardware-software iteration cycle"
         ]
       }
     ]
@@ -462,26 +484,18 @@ export const busObjectives = [
     text: objectiveTexts.bus[3],
     projects: [
       {
-        ...projects.interpaws,
-        title: "Interpaws (SIP)",
-        description: "Defined the operational financial model, establishing a $3,000 setup fee and $300 monthly subscription structure to ensure business viability. Conducted market analysis to identify the \"average age of 43\" for target practice owners and developed a marketing operations plan.",
+        ...projects.cyberInsurance,
         meetsObjective: [
-          "Defined operational financial model with pricing structure",
-          "Established $3,000 setup fee and $300 monthly subscription",
-          "Conducted market analysis identifying target demographics",
-          "Developed comprehensive marketing operations plan"
+          "Evaluated financial exposure and liability risks ($9.5M exposure)",
+          "Analyzed regulatory compliance requirements for GLBA and PCI DSS",
+          "Conducted market analysis of insurance providers (Chubb vs Beazley)",
+          "Developed operational readiness checklist for risk mitigation"
         ]
       },
       {
-        id: "bus4-project2",
-        title: "Apple Portfolio Project",
-        role: "Financial Analyst",
-        team: ["Amari Bullard"],
-        description: "Conducted a deep-dive financial analysis of Apple's balance sheets and cash flow statements to evaluate operational margins and organizational performance. Analyzed \"Operating activities,\" \"Investing activities,\" and \"Financing activities\" to assess the company's fiscal health.",
-        tools: ["Financial Analysis", "Excel", "Balance Sheet Analysis", "Cash Flow Analysis"],
-        links: { docs: "https://drive.google.com/file/d/1l-0apNQxIjutKFPgpUwzvXx6n7KRrWha/view?usp=sharing" },
+        ...projects.applePortfolio,
         meetsObjective: [
-          "Conducted financial analysis of balance sheets and cash flow",
+          "Conducted financial analysis of balance sheets",
           "Evaluated operational margins and organizational performance",
           "Analyzed operating, investing, and financing activities",
           "Assessed company fiscal health through financial modeling"
@@ -494,13 +508,7 @@ export const busObjectives = [
     text: objectiveTexts.bus[4],
     projects: [
       {
-        id: "bus5-project1",
-        title: "Management Presentation",
-        role: "Leadership Strategist",
-        team: ["Amari Bullard"],
-        description: "Formulated a leadership strategy focused on employee motivation and risk assessment, defining clear communication protocols to maintain team cohesion. Emphasized the importance of \"getting to know those who work with you\" to build a comfortable and productive work environment.",
-        tools: ["Microsoft PowerPoint", "Leadership Strategy", "Team Management"],
-        links: { docs: "https://docs.google.com/presentation/d/1RynUtyBCjJbf7rDyouT_A98ow73kqvDq/edit?usp=sharing&ouid=115978480032856245481&rtpof=true&sd=true" },
+        ...projects.managementPresentation,
         meetsObjective: [
           "Formulated leadership strategy for employee motivation",
           "Defined risk assessment and communication protocols",
@@ -509,15 +517,9 @@ export const busObjectives = [
         ]
       },
       {
-        id: "bus5-project2",
-        title: "Interpaws Business Plan",
-        role: "Organizational Designer",
-        team: ["Amari Bullard"],
-        description: "Defined the organizational leadership structure (CEO, Product Managers) and established an advisory board of veterinary professionals to validate technical features. Created protocols for training employees and assessing risk to ensure safe and effective team operations.",
-        tools: ["Organizational Design", "Microsoft Word", "Risk Assessment", "Training Protocols"],
-        links: { docs: "https://drive.google.com/file/d/10E6DYumzkdaWeUPdSevo4k1AKo5enjZF/view?usp=sharing" },
+        ...projects.interpawsBusinessPlan,
         meetsObjective: [
-          "Defined organizational leadership structure",
+          "Defined organizational leadership structure (CEO, Product Managers)",
           "Established advisory board for technical validation",
           "Created employee training protocols",
           "Developed risk assessment procedures for team operations"
@@ -531,28 +533,22 @@ export const busObjectives = [
     projects: [
       {
         ...projects.interpaws,
-        title: "Interpaws (SIP)",
-        description: "Engineered an \"Admin Dashboard with KPIs\" that generates actionable analytics on scheduling and client needs to support practice management decisions. The system provides insights to solve \"over or underscheduling problems\" based on data.",
         meetsObjective: [
-          "Engineered Admin Dashboard with actionable KPIs",
-          "Generated analytics on scheduling and client needs",
-          "Supported practice management decision-making",
-          "Provided data-driven insights for scheduling optimization"
+          "Engineered Admin Dashboard with KPIs for practice management",
+          "Visualized scheduling data to solve over/underscheduling problems",
+          "Generated actionable analytics for client retention",
+          "Provided data-driven insights for organizational performance"
         ]
       },
       {
-        id: "bus6-project2",
-        title: "Apple Portfolio Project",
-        role: "Data Analyst",
-        team: ["Amari Bullard"],
-        description: "Analyzed \"Historical Data & Analytic Decision Models\" to interpret sales trends across regions (Americas, Europe, China), using data to drive strategic business decisions. Evaluated KPIs like annual iPhone sales objectives to measure strategy effectiveness.",
-        tools: ["Data Analytics", "Excel", "Sales Trend Analysis", "KPI Evaluation"],
-        links: { docs: "https://drive.google.com/file/d/1l-0apNQxIjutKFPgpUwzvXx6n7KRrWha/view?usp=sharing" },
+        ...projects.applePortfolio,
+        title: "Apple Strategy Implementation",
+        links: { docs: docs.appleStrategy },
         meetsObjective: [
-          "Analyzed historical data and analytic decision models",
-          "Interpreted sales trends across global regions",
-          "Used data to drive strategic business decisions",
-          "Evaluated KPIs to measure strategy effectiveness"
+          "Analyzed 'Historical Data & Analytic Decision Models'",
+          "Interpreted sales trends across global regions (Americas, Europe, China)",
+          "Used data models to drive strategic business decisions",
+          "Evaluated KPIs like annual iPhone sales objectives"
         ]
       }
     ]
