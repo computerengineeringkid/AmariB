@@ -372,7 +372,7 @@ export const busObjectives = [
         team: ["Amari Bullard"],
         description: "Developed a strategic management framework outlining the necessity of planning (\"Plan out what you are going to do\") to prevent organizational chaos. Defined the strategy for monitoring business practices to prevent inefficiencies from running \"wild\".",
         tools: ["Microsoft PowerPoint", "Strategic Planning", "Business Analysis"],
-        links: {},
+        links: { docs: "https://docs.google.com/presentation/d/1RynUtyBCjJbf7rDyouT_A98ow73kqvDq/edit?usp=sharing&ouid=115978480032856245481&rtpof=true&sd=true" },
         meetsObjective: [
           "Created strategic management framework for organizational planning",
           "Defined planning protocols to prevent organizational chaos",
@@ -382,12 +382,16 @@ export const busObjectives = [
       },
       {
         id: "bus1-project2",
-        title: "Saguaro Interactive",
+        title: "Saguaro Interactive (Software Division)",
         role: "Business Strategist",
         team: ["Amari Bullard"],
         description: "Authored a comprehensive Business Plan strategy that defines the product vision (\"Fewer bottlenecks, More care\") and the strategic roadmap for market entry. Documented the launch timeline across six distinct phases, from prototype refinement to public launch.",
         tools: ["Microsoft Word", "Business Planning", "Market Strategy", "Product Roadmap"],
-        links: {},
+        links: { 
+          live: "https://saguarointeractive.com/", 
+          demo: "https://interpaws.com/", 
+          docs: "https://docs.google.com/document/d/1NAa1nzV8lcNk9fwD24V-8Hpa-V0BvmEe/edit?usp=sharing&ouid=115978480032856245481&rtpof=true&sd=true" 
+        },
         meetsObjective: [
           "Authored comprehensive Business Plan with product vision",
           "Defined strategic roadmap for market entry",
@@ -475,7 +479,7 @@ export const busObjectives = [
         team: ["Amari Bullard"],
         description: "Conducted a deep-dive financial analysis of Apple's balance sheets and cash flow statements to evaluate operational margins and organizational performance. Analyzed \"Operating activities,\" \"Investing activities,\" and \"Financing activities\" to assess the company's fiscal health.",
         tools: ["Financial Analysis", "Excel", "Balance Sheet Analysis", "Cash Flow Analysis"],
-        links: {},
+        links: { docs: "https://drive.google.com/file/d/1l-0apNQxIjutKFPgpUwzvXx6n7KRrWha/view?usp=sharing" },
         meetsObjective: [
           "Conducted financial analysis of balance sheets and cash flow",
           "Evaluated operational margins and organizational performance",
@@ -506,12 +510,12 @@ export const busObjectives = [
       },
       {
         id: "bus5-project2",
-        title: "Saguaro Interactive",
+        title: "Interpaws Business Plan",
         role: "Organizational Designer",
         team: ["Amari Bullard"],
         description: "Defined the organizational leadership structure (CEO, Product Managers) and established an advisory board of veterinary professionals to validate technical features. Created protocols for training employees and assessing risk to ensure safe and effective team operations.",
         tools: ["Organizational Design", "Microsoft Word", "Risk Assessment", "Training Protocols"],
-        links: {},
+        links: { docs: "https://drive.google.com/file/d/10E6DYumzkdaWeUPdSevo4k1AKo5enjZF/view?usp=sharing" },
         meetsObjective: [
           "Defined organizational leadership structure",
           "Established advisory board for technical validation",
@@ -543,7 +547,7 @@ export const busObjectives = [
         team: ["Amari Bullard"],
         description: "Analyzed \"Historical Data & Analytic Decision Models\" to interpret sales trends across regions (Americas, Europe, China), using data to drive strategic business decisions. Evaluated KPIs like annual iPhone sales objectives to measure strategy effectiveness.",
         tools: ["Data Analytics", "Excel", "Sales Trend Analysis", "KPI Evaluation"],
-        links: {},
+        links: { docs: "https://drive.google.com/file/d/1l-0apNQxIjutKFPgpUwzvXx6n7KRrWha/view?usp=sharing" },
         meetsObjective: [
           "Analyzed historical data and analytic decision models",
           "Interpreted sales trends across global regions",
