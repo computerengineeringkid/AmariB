@@ -364,158 +364,32 @@ export const busObjectives = [
   {
     id: 1,
     text: objectiveTexts.bus[0],
-    projects: [
-      {
-        ...projects.interpaws,
-        title: "Interpaws Master Plans v1-v3",
-        meetsObjective: [
-          "Three iterations of comprehensive product strategy documentation",
-          "Feature roadmaps with prioritization and dependency mapping",
-          "Technical architecture decisions documented with rationale",
-          "Development timelines with milestone tracking"
-        ]
-      },
-      {
-        ...projects.interpawsBusinessPlan,
-        meetsObjective: [
-          "Formal business plan with executive summary and vision statement",
-          "Product/service plan detailing SaaS offering and pricing strategy",
-          "Market analysis of veterinary software competitive landscape",
-          "Testing procedures and quality assurance planning"
-        ]
-      }
-    ]
+    projects: []
   },
   {
     id: 2,
     text: objectiveTexts.bus[1],
-    projects: [
-      {
-        ...projects.brandStrategy,
-        title: "Brand Strategy & Market Launch",
-        meetsObjective: [
-          "Advertising mix strategy: Google Ads, LinkedIn, veterinary conferences",
-          "Social media content strategy across Facebook, Instagram, LinkedIn",
-          "Phased launch timeline: pre-launch, beta, pilot, public release",
-          "KPI definitions for measuring go-to-market success"
-        ]
-      },
-      {
-        ...projects.interpawsBusinessPlan,
-        title: "Interpaws Launch Infrastructure",
-        meetsObjective: [
-          "Marketing budget allocation and resource planning",
-          "CRM implementation for lead management and conversion tracking",
-          "Sales pipeline development with demo scheduling workflow",
-          "Customer onboarding infrastructure and support systems"
-        ]
-      }
-    ]
+    projects: []
   },
   {
     id: 3,
     text: objectiveTexts.bus[2],
-    projects: [
-      {
-        ...projects.interpaws,
-        title: "Interpaws 18-Day Sprint",
-        meetsObjective: [
-          "AI-assisted sprint methodology with daily iteration cycles",
-          "Context-switching optimization designed for ADHD workflow",
-          "Daily review/debug sessions for continuous improvement",
-          "Lean approach: minimal viable features prioritized for rapid delivery"
-        ]
-      },
-      {
-        ...projects.canvasTracker,
-        title: "Canvas Tracker Agile Development",
-        meetsObjective: [
-          "Iterative development responding to personal productivity needs",
-          "Continuous deployment with automated background sync features",
-          "User feedback integration through notification preference tuning",
-          "Lean methodology: solving one problem (assignment tracking) well"
-        ]
-      }
-    ]
+    projects: []
   },
   {
     id: 4,
     text: objectiveTexts.bus[3],
-    projects: [
-      {
-        ...projects.interpawsBusinessPlan,
-        title: "Interpaws Business Operations",
-        meetsObjective: [
-          "Finance: SaaS pricing model ($3000 setup + $300/month recurring)",
-          "Legal: Saguaro Interactive LLC structure, IP protection strategy",
-          "Marketing: Competitive analysis and positioning strategy",
-          "Operations: Customer support workflow and escalation procedures"
-        ]
-      },
-      {
-        ...projects.brandStrategy,
-        title: "Brand Strategy Operations",
-        meetsObjective: [
-          "Marketing budget: $100/week for 12 weeks allocated by channel",
-          "Lead handling SLA: 24-hour reply, 72-hour demo scheduling",
-          "CRM implementation for tracking leads through sales funnel",
-          "Supply infrastructure: Cloud hosting, third-party integrations"
-        ]
-      }
-    ]
+    projects: []
   },
   {
     id: 5,
     text: objectiveTexts.bus[4],
-    projects: [
-      {
-        ...projects.interpawsBusinessPlan,
-        title: "Interpaws Organization Design",
-        meetsObjective: [
-          "Organizational structure: Founder/CEO, Lead Engineer, Product roles",
-          "Defined responsibilities for Marketing Lead and Customer Support",
-          "Advisory Board structure for strategic guidance",
-          "Team scaling plan for growth phases"
-        ]
-      },
-      {
-        ...projects.interpaws,
-        title: "SIP Project Leadership",
-        role: "Project Lead & Sole Developer",
-        meetsObjective: [
-          "Led complete project lifecycle from ideation to deployment",
-          "Managed technical decisions and architecture planning",
-          "Coordinated documentation across Master Plans and Business Plan",
-          "Self-directed sprint management with accountability tracking"
-        ]
-      }
-    ]
+    projects: []
   },
   {
     id: 6,
     text: objectiveTexts.bus[5],
-    projects: [
-      {
-        ...projects.interpaws,
-        title: "Interpaws Dashboard & KPIs",
-        meetsObjective: [
-          "Admin dashboard with calendar views and booking analytics",
-          "Staff utilization metrics for resource optimization",
-          "Revenue tracking and financial performance visualization",
-          "Success metrics: activation time, wait time variance, conversion rates"
-        ]
-      },
-      {
-        ...projects.brandStrategy,
-        title: "Brand Strategy KPIs",
-        meetsObjective: [
-          "Social media metrics: engagement rates, follower growth",
-          "Marketing analytics: CTR, demo sign-ups, conversion rates",
-          "Customer satisfaction scoring methodology",
-          "Data visualization for stakeholder reporting"
-        ]
-      }
-    ]
+    projects: []
   }
 ]
 
