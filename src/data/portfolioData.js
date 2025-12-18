@@ -525,22 +525,24 @@ export const netObjectives = [
     text: objectiveTexts.net[0],
     projects: [
       {
-        ...projects.enterpriseNetwork,
-        meetsObjective: [
-          "Analyzed organizational requirements for 200+ employee company",
-          "Designed network architecture with Cisco Nexus 9000 core switches",
-          "Implemented dual ISP redundancy for high availability",
-          "Created branch office connectivity with secure VPN tunnels"
-        ]
+        id: "net1-project1",
+        title: "",
+        role: "",
+        team: [],
+        description: "",
+        tools: [],
+        links: {},
+        meetsObjective: []
       },
       {
-        ...projects.disasterRecovery,
-        meetsObjective: [
-          "Analyzed business continuity requirements and RTO/RPO targets",
-          "Designed network failover architecture with UPS and generator backup",
-          "Planned satellite office VPN connectivity for remote operations",
-          "Created escalation procedures based on organizational structure"
-        ]
+        id: "net1-project2",
+        title: "",
+        role: "",
+        team: [],
+        description: "",
+        tools: [],
+        links: {},
+        meetsObjective: []
       }
     ]
   },
@@ -549,33 +551,24 @@ export const netObjectives = [
     text: objectiveTexts.net[1],
     projects: [
       {
-        ...projects.interpaws,
-        title: "Interpaws Cloud Deployment",
-        meetsObjective: [
-          "Docker containerization enabling cloud portability",
-          "Vercel frontend deployment with global CDN distribution",
-          "Cloud PostgreSQL provisioning with managed backups",
-          "Environment variable management for secure configuration"
-        ]
+        id: "net2-project1",
+        title: "",
+        role: "",
+        team: [],
+        description: "",
+        tools: [],
+        links: {},
+        meetsObjective: []
       },
       {
-        ...projects.disasterRecovery,
-        title: "Disaster Recovery Cloud Strategy",
-        meetsObjective: [
-          "AWS/Azure cloud backup for geographic redundancy",
-          "On-demand scaling for disaster recovery failover",
-          "Offsite data protection meeting compliance requirements",
-          "Cost-benefit analysis of cloud vs on-premise DR solutions"
-        ]
-      },
-      {
-        ...projects.nexatechAwsMigration,
-        meetsObjective: [
-          "Designs remote/cloud infrastructure using AWS services to support workloads off-prem",
-          "Highlights scalability/reliability with ELB + Auto Scaling + managed databases",
-          "Includes monitoring/logging strategy (CloudWatch/CloudTrail) and storage/archival (S3/Glacier)",
-          "Provides a migration approach (DMS) showing practical implementation planning"
-        ]
+        id: "net2-project2",
+        title: "",
+        role: "",
+        team: [],
+        description: "",
+        tools: [],
+        links: {},
+        meetsObjective: []
       }
     ]
   },
@@ -584,24 +577,24 @@ export const netObjectives = [
     text: objectiveTexts.net[2],
     projects: [
       {
-        ...projects.enterpriseNetwork,
-        title: "Enterprise Network Optimization",
-        meetsObjective: [
-          "Identified latency issues exceeding 100ms during peak hours",
-          "Diagnosed VLAN capacity limitations causing broadcast storms",
-          "Configured QoS policies for traffic prioritization",
-          "Implemented solutions reducing latency by 60%"
-        ]
+        id: "net3-project1",
+        title: "",
+        role: "",
+        team: [],
+        description: "",
+        tools: [],
+        links: {},
+        meetsObjective: []
       },
       {
-        ...projects.disasterRecovery,
-        title: "DR Network Troubleshooting",
-        meetsObjective: [
-          "Identified single points of failure in network topology",
-          "Diagnosed backup job failures due to bandwidth constraints",
-          "Resolved VPN tunnel instability affecting remote sites",
-          "Optimized replication schedules to avoid network congestion"
-        ]
+        id: "net3-project2",
+        title: "",
+        role: "",
+        team: [],
+        description: "",
+        tools: [],
+        links: {},
+        meetsObjective: []
       }
     ]
   },
@@ -610,24 +603,24 @@ export const netObjectives = [
     text: objectiveTexts.net[3],
     projects: [
       {
-        ...projects.disasterRecovery,
-        title: "Disaster Recovery Implementation",
-        meetsObjective: [
-          "Daily incremental and weekly full backup procedures",
-          "UPS failover with generator integration for power continuity",
-          "Documented escalation paths for incident response",
-          "Remote deployment procedures for DR site activation"
-        ]
+        id: "net4-project1",
+        title: "",
+        role: "",
+        team: [],
+        description: "",
+        tools: [],
+        links: {},
+        meetsObjective: []
       },
       {
-        ...projects.enterpriseNetwork,
-        title: "Enterprise Access Controls",
-        meetsObjective: [
-          "Cisco ISE implementation for authentication and policy enforcement",
-          "Role-based access controls mapped to organizational structure",
-          "Group policy configuration for network resource access",
-          "Audit logging and compliance reporting capabilities"
-        ]
+        id: "net4-project2",
+        title: "",
+        role: "",
+        team: [],
+        description: "",
+        tools: [],
+        links: {},
+        meetsObjective: []
       }
     ]
   },
@@ -636,23 +629,24 @@ export const netObjectives = [
     text: objectiveTexts.net[4],
     projects: [
       {
-        ...projects.emergencySos,
-        meetsObjective: [
-          "IoT device WiFi integration with traditional network infrastructure",
-          "HTTP client communication bridging embedded and cloud systems",
-          "Discord webhook API connecting IoT to mobile notifications",
-          "Cross-platform solution: embedded device, cloud service, mobile app"
-        ]
+        id: "net5-project1",
+        title: "",
+        role: "",
+        team: [],
+        description: "",
+        tools: [],
+        links: {},
+        meetsObjective: []
       },
       {
-        ...projects.canvasTracker,
-        title: "Canvas Tracker Webhook Integration",
-        meetsObjective: [
-          "Discord webhook implementation for real-time notifications",
-          "API integration between web service and mobile platform",
-          "Background sync enabling mobile notification delivery",
-          "Traditional web server communicating with mobile messaging systems"
-        ]
+        id: "net5-project2",
+        title: "",
+        role: "",
+        team: [],
+        description: "",
+        tools: [],
+        links: {},
+        meetsObjective: []
       }
     ]
   },
@@ -661,32 +655,24 @@ export const netObjectives = [
     text: objectiveTexts.net[5],
     projects: [
       {
-        ...projects.cyberInsurance,
-        meetsObjective: [
-          "MFA implementation requirements based on NIST guidelines",
-          "EDR deployment recommendations following CIS Controls",
-          "Incident response procedures aligned with industry frameworks",
-          "Regulatory compliance assessment: GLBA, PCI DSS requirements"
-        ]
+        id: "net6-project1",
+        title: "",
+        role: "",
+        team: [],
+        description: "",
+        tools: [],
+        links: {},
+        meetsObjective: []
       },
       {
-        ...projects.enterpriseNetwork,
-        title: "Enterprise Network Security",
-        meetsObjective: [
-          "IPsec VPN tunnels with AES-256 encryption",
-          "Firewall configuration following defense-in-depth principles",
-          "Cisco Secure Network Analytics for threat monitoring",
-          "Network segmentation isolating sensitive resources"
-        ]
-      },
-      {
-        ...projects.enterpriseSecurityPlan,
-        meetsObjective: [
-          "Documents security principles (CIA, least privilege, access controls) applied to network systems",
-          "Defines controls (encryption, monitoring/IDS/SIEM, auditing) to align with common standards expectations",
-          "Includes incident response approach and continuous monitoring practices",
-          "Shows risk mitigation and governance through documented policy and procedures"
-        ]
+        id: "net6-project2",
+        title: "",
+        role: "",
+        team: [],
+        description: "",
+        tools: [],
+        links: {},
+        meetsObjective: []
       }
     ]
   }
