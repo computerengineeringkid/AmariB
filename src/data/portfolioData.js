@@ -364,32 +364,194 @@ export const busObjectives = [
   {
     id: 1,
     text: objectiveTexts.bus[0],
-    projects: []
+    projects: [
+      {
+        id: "bus1-project1",
+        title: "Management Presentation",
+        role: "Business Strategist",
+        team: ["Amari Bullard"],
+        description: "Developed a strategic management framework outlining the necessity of planning (\"Plan out what you are going to do\") to prevent organizational chaos. Defined the strategy for monitoring business practices to prevent inefficiencies from running \"wild\".",
+        tools: ["Microsoft PowerPoint", "Strategic Planning", "Business Analysis"],
+        links: {},
+        meetsObjective: [
+          "Created strategic management framework for organizational planning",
+          "Defined planning protocols to prevent organizational chaos",
+          "Established monitoring strategy for business practices",
+          "Documented strategies to prevent operational inefficiencies"
+        ]
+      },
+      {
+        id: "bus1-project2",
+        title: "Saguaro Interactive",
+        role: "Business Strategist",
+        team: ["Amari Bullard"],
+        description: "Authored a comprehensive Business Plan strategy that defines the product vision (\"Fewer bottlenecks, More care\") and the strategic roadmap for market entry. Documented the launch timeline across six distinct phases, from prototype refinement to public launch.",
+        tools: ["Microsoft Word", "Business Planning", "Market Strategy", "Product Roadmap"],
+        links: {},
+        meetsObjective: [
+          "Authored comprehensive Business Plan with product vision",
+          "Defined strategic roadmap for market entry",
+          "Documented six-phase launch timeline",
+          "Created product development plan from prototype to public launch"
+        ]
+      }
+    ]
   },
   {
     id: 2,
     text: objectiveTexts.bus[1],
-    projects: []
+    projects: [
+      {
+        ...projects.emergencySos,
+        title: "M5StickC SOS System",
+        description: "Assembled a hardware and network infrastructure using IoT microcontrollers (M5StickC Plus) and WiFi telemetry to support real-time emergency data transmission. Integrated accelerometer sensors and HTTP clients to create a functional safety device infrastructure.",
+        meetsObjective: [
+          "Assembled hardware infrastructure using IoT microcontrollers",
+          "Established WiFi telemetry for real-time data transmission",
+          "Integrated accelerometer sensors and HTTP clients",
+          "Created functional safety device infrastructure"
+        ]
+      },
+      {
+        ...projects.canvasTracker,
+        title: "Canvas Tracker PWA",
+        description: "Built the backend infrastructure required for data synchronization, assembling Python APScheduler resources and Discord Webhooks to automate alerts. Established a service worker infrastructure to ensure the application functioned as a Progressive Web App (PWA).",
+        meetsObjective: [
+          "Built backend infrastructure for data synchronization",
+          "Assembled Python APScheduler and Discord Webhook resources",
+          "Automated alert systems for notifications",
+          "Established service worker infrastructure for PWA functionality"
+        ]
+      }
+    ]
   },
   {
     id: 3,
     text: objectiveTexts.bus[2],
-    projects: []
+    projects: [
+      {
+        ...projects.emergencySos,
+        title: "M5StickC SOS System",
+        description: "Applied lean prototyping principles to rapidly develop a Minimum Viable Product (MVP) for fall detection, iterating on sensor algorithms to minimize false positives. Utilized C++ and Arduino libraries to quickly test and validate the connectivity strategy.",
+        meetsObjective: [
+          "Applied lean prototyping principles for rapid MVP development",
+          "Iterated on sensor algorithms to minimize false positives",
+          "Utilized C++ and Arduino for quick testing and validation",
+          "Validated connectivity strategy through agile iteration"
+        ]
+      },
+      {
+        ...projects.canvasTracker,
+        title: "Canvas Tracker PWA",
+        description: "Utilized iterative development to build a Progressive Web App, continuously integrating features like background sync and service workers to enhance the user experience. Adapted the product mission to solve immediate personal time-management needs through rapid software iteration.",
+        meetsObjective: [
+          "Utilized iterative development for continuous feature integration",
+          "Implemented background sync and service workers incrementally",
+          "Adapted product mission through rapid software iteration",
+          "Applied agile approach to solve time-management needs"
+        ]
+      }
+    ]
   },
   {
     id: 4,
     text: objectiveTexts.bus[3],
-    projects: []
+    projects: [
+      {
+        ...projects.interpaws,
+        title: "Interpaws (SIP)",
+        description: "Defined the operational financial model, establishing a $3,000 setup fee and $300 monthly subscription structure to ensure business viability. Conducted market analysis to identify the \"average age of 43\" for target practice owners and developed a marketing operations plan.",
+        meetsObjective: [
+          "Defined operational financial model with pricing structure",
+          "Established $3,000 setup fee and $300 monthly subscription",
+          "Conducted market analysis identifying target demographics",
+          "Developed comprehensive marketing operations plan"
+        ]
+      },
+      {
+        id: "bus4-project2",
+        title: "Apple Portfolio Project",
+        role: "Financial Analyst",
+        team: ["Amari Bullard"],
+        description: "Conducted a deep-dive financial analysis of Apple's balance sheets and cash flow statements to evaluate operational margins and organizational performance. Analyzed \"Operating activities,\" \"Investing activities,\" and \"Financing activities\" to assess the company's fiscal health.",
+        tools: ["Financial Analysis", "Excel", "Balance Sheet Analysis", "Cash Flow Analysis"],
+        links: {},
+        meetsObjective: [
+          "Conducted financial analysis of balance sheets and cash flow",
+          "Evaluated operational margins and organizational performance",
+          "Analyzed operating, investing, and financing activities",
+          "Assessed company fiscal health through financial modeling"
+        ]
+      }
+    ]
   },
   {
     id: 5,
     text: objectiveTexts.bus[4],
-    projects: []
+    projects: [
+      {
+        id: "bus5-project1",
+        title: "Management Presentation",
+        role: "Leadership Strategist",
+        team: ["Amari Bullard"],
+        description: "Formulated a leadership strategy focused on employee motivation and risk assessment, defining clear communication protocols to maintain team cohesion. Emphasized the importance of \"getting to know those who work with you\" to build a comfortable and productive work environment.",
+        tools: ["Microsoft PowerPoint", "Leadership Strategy", "Team Management"],
+        links: {},
+        meetsObjective: [
+          "Formulated leadership strategy for employee motivation",
+          "Defined risk assessment and communication protocols",
+          "Emphasized team relationship building for cohesion",
+          "Created framework for productive work environment"
+        ]
+      },
+      {
+        id: "bus5-project2",
+        title: "Saguaro Interactive",
+        role: "Organizational Designer",
+        team: ["Amari Bullard"],
+        description: "Defined the organizational leadership structure (CEO, Product Managers) and established an advisory board of veterinary professionals to validate technical features. Created protocols for training employees and assessing risk to ensure safe and effective team operations.",
+        tools: ["Organizational Design", "Microsoft Word", "Risk Assessment", "Training Protocols"],
+        links: {},
+        meetsObjective: [
+          "Defined organizational leadership structure",
+          "Established advisory board for technical validation",
+          "Created employee training protocols",
+          "Developed risk assessment procedures for team operations"
+        ]
+      }
+    ]
   },
   {
     id: 6,
     text: objectiveTexts.bus[5],
-    projects: []
+    projects: [
+      {
+        ...projects.interpaws,
+        title: "Interpaws (SIP)",
+        description: "Engineered an \"Admin Dashboard with KPIs\" that generates actionable analytics on scheduling and client needs to support practice management decisions. The system provides insights to solve \"over or underscheduling problems\" based on data.",
+        meetsObjective: [
+          "Engineered Admin Dashboard with actionable KPIs",
+          "Generated analytics on scheduling and client needs",
+          "Supported practice management decision-making",
+          "Provided data-driven insights for scheduling optimization"
+        ]
+      },
+      {
+        id: "bus6-project2",
+        title: "Apple Portfolio Project",
+        role: "Data Analyst",
+        team: ["Amari Bullard"],
+        description: "Analyzed \"Historical Data & Analytic Decision Models\" to interpret sales trends across regions (Americas, Europe, China), using data to drive strategic business decisions. Evaluated KPIs like annual iPhone sales objectives to measure strategy effectiveness.",
+        tools: ["Data Analytics", "Excel", "Sales Trend Analysis", "KPI Evaluation"],
+        links: {},
+        meetsObjective: [
+          "Analyzed historical data and analytic decision models",
+          "Interpreted sales trends across global regions",
+          "Used data to drive strategic business decisions",
+          "Evaluated KPIs to measure strategy effectiveness"
+        ]
+      }
+    ]
   }
 ]
 
