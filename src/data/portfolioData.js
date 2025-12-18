@@ -2,19 +2,19 @@
 // Each project must have: title, role, team, description, tools, links, meetsObjective
 
 export const docs = {
-  brandStrategy: "/documents/Brand Strategy & Market Launch for Interpaws.docx",
-  cyberInsurance: "/documents/Cyber Insurance Policy Evaluation.pdf",
+  brandStrategy: "https://docs.google.com/document/d/1NAa1nzV8lcNk9fwD24V-8Hpa-V0BvmEe/edit?usp=drive_link&ouid=115978480032856245481&rtpof=true&sd=true",
+  cyberInsurance: "https://drive.google.com/file/d/1NNyJklUYxPbeC1ZNV_m_y86KuTDBdQlk/view?usp=sharing",
   disasterRecovery: "https://drive.google.com/file/d/13r4168gyp4xStIieYZYZoD7SzPhN3-Jg/view",
   enterpriseNetwork: "https://drive.google.com/file/d/1eAK_32XcYHUESSHNI2kCyq3O8F5iQw18/view",
-  interpawsBusinessPlan: "/documents/Interpaws finished business plan.pdf",
-  interpawsMasterPlan: "https://drive.google.com/file/d/1FaGi4FUeZXV0l-57_3T8iSZh-o6ArrFO/view",
+  interpawsBusinessPlan: "https://drive.google.com/file/d/10E6DYumzkdaWeUPdSevo4k1AKo5enjZF/view?usp=drive_link",
+  interpawsMasterPlan: "https://drive.google.com/file/d/1FaGi4FUeZXV0l-57_3T8iSZh-o6ArrFO/view?usp=sharing",
   nexatechAwsMigration: "https://drive.google.com/file/d/1g1zpoB8ByG_6Kl9bEhahlhuKjTK7rTWm/view?usp=sharing",
   enterpriseSecurityPlan: "https://docs.google.com/document/d/1SkOjiSMdnFdjYyAwfkB-WZk8J4NZetb8/edit?usp=drive_link&ouid=110289498123879233388&rtpof=true&sd=true",
-  managementPresentation: "/documents/management.pptx",
-  applePortfolio: "/documents/Portfolio Project_ Apple, Inc.pdf",
-  appleStrategy: "/documents/Strategy Implementation and Evaluation_ Apple.pdf",
-  nexaTech: "/documents/NexaTech (1).pdf",
-  businessContinuity: "/documents/Business Continuity Plan Creation.docx"
+  managementPresentation: "https://docs.google.com/presentation/d/1RynUtyBCjJbf7rDyouT_A98ow73kqvDq/edit?usp=drive_link&ouid=115978480032856245481&rtpof=true&sd=true",
+  applePortfolio: "https://drive.google.com/file/d/1ystN1cV8WJo2SnWiQfnG5o2Lk71gavUc/view?usp=drive_link",
+  appleStrategy: "https://drive.google.com/file/d/1ystN1cV8WJo2SnWiQfnG5o2Lk71gavUc/view?usp=drive_link",
+  nexaTech: "https://drive.google.com/file/d/1e3ST2_2n1RhwK-cnZq48MGyvXAc6CSf1/view?usp=drive_link",
+  businessContinuity: "https://docs.google.com/document/d/1xFxIpHzdleoqy2shO4mbKxvIguJaoKh4/edit?usp=drive_link&ouid=115978480032856245481&rtpof=true&sd=true"
 }
 
 export const github = {
@@ -461,6 +461,7 @@ export const busObjectives = [
     projects: [
       {
         ...projects.interpaws,
+        links: { github: github.interpaws, docs: docs.interpawsMasterPlan },
         meetsObjective: [
           "Applied Agile methodologies with 18-day documented sprint cycles",
           "Utilized iterative deployment phases to refine product strategy",
@@ -533,6 +534,7 @@ export const busObjectives = [
     projects: [
       {
         ...projects.interpaws,
+        links: { github: github.interpaws, docs: docs.interpawsMasterPlan },
         meetsObjective: [
           "Engineered Admin Dashboard with KPIs for practice management",
           "Visualized scheduling data to solve over/underscheduling problems",
