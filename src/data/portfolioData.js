@@ -526,23 +526,29 @@ export const netObjectives = [
     projects: [
       {
         id: "net1-project1",
-        title: "",
-        role: "",
-        team: [],
-        description: "",
-        tools: [],
+        title: "Small Office Network Configuration",
+        role: "Network Engineer",
+        team: ["Amari Bullard"],
+        description: "Designed a dual-subnet network topology for a medium-sized business using Cisco Packet Tracer. Configured routers, switches, and firewalls to segment traffic between departments (192.168.1.0/24 and 192.168.2.0/24).",
+        tools: ["Cisco Packet Tracer", "Router Configuration", "Switch Configuration", "Firewall Rules", "VLAN Segmentation"],
         links: {},
-        meetsObjective: []
+        meetsObjective: [
+          "Analyzed business requirements for network segmentation between departments",
+          "Designed dual-subnet architecture (192.168.1.0/24 and 192.168.2.0/24)",
+          "Configured routers and switches for inter-VLAN routing",
+          "Implemented firewall rules to control traffic flow between subnets"
+        ]
       },
       {
-        id: "net1-project2",
-        title: "",
-        role: "",
-        team: [],
-        description: "",
-        tools: [],
-        links: {},
-        meetsObjective: []
+        ...projects.interpaws,
+        title: "Interpaws - AI Veterinary Management",
+        description: "Architected a containerized application system using Docker to isolate the Next.js frontend from the FastAPI backend, ensuring scalable deployment and clean separation of concerns.",
+        meetsObjective: [
+          "Designed containerized architecture separating frontend and backend services",
+          "Implemented Docker networking for secure inter-container communication",
+          "Created scalable deployment topology with isolated service components",
+          "Established clean separation of concerns through network architecture"
+        ]
       }
     ]
   },
@@ -551,24 +557,26 @@ export const netObjectives = [
     text: objectiveTexts.net[1],
     projects: [
       {
-        id: "net2-project1",
-        title: "",
-        role: "",
-        team: [],
-        description: "",
-        tools: [],
-        links: {},
-        meetsObjective: []
+        ...projects.nexatechAwsMigration,
+        title: "NexaTech Cloud Migration Strategy",
+        description: "Developed a comprehensive migration plan moving on-premise infrastructure to AWS. Architected a solution using AWS VPC for network isolation, EC2 with Auto Scaling for load management, and CloudEndure for disaster recovery.",
+        meetsObjective: [
+          "Designed AWS VPC architecture for network isolation and security",
+          "Planned EC2 deployment with Auto Scaling for dynamic load management",
+          "Integrated CloudEndure for disaster recovery and business continuity",
+          "Emphasized benefits of remote infrastructure including scalability and cost optimization"
+        ]
       },
       {
-        id: "net2-project2",
-        title: "",
-        role: "",
-        team: [],
-        description: "",
-        tools: [],
-        links: {},
-        meetsObjective: []
+        ...projects.us93AlertsBot,
+        title: "Serverless Traffic Incident Monitor (US93 Alerts)",
+        description: "Deployed a Python-based automation tool using GitHub Actions (CI/CD) to run on a serverless schedule. Consumes the Arizona 511 API to monitor road conditions and pushes real-time alerts via Discord Webhooks.",
+        meetsObjective: [
+          "Implemented serverless architecture using GitHub Actions scheduled workflows",
+          "Leveraged cloud-based CI/CD pipeline for automated execution",
+          "Consumed external REST API (Arizona 511) for real-time data",
+          "Demonstrated remote infrastructure benefits through zero-maintenance deployment"
+        ]
       }
     ]
   },
@@ -578,23 +586,29 @@ export const netObjectives = [
     projects: [
       {
         id: "net3-project1",
-        title: "",
-        role: "",
-        team: [],
-        description: "",
-        tools: [],
+        title: "Legacy Infrastructure Migration & DNS Remediation",
+        role: "Network Administrator",
+        team: ["Amari Bullard"],
+        description: "Resolved a critical service outage for client 'PR Development Group' following a registrar migration. Identified stale DNS zone records pointing to decommissioned hosts and restored functionality by reconfiguring A, CNAME, and MX records for Google Workspace.",
+        tools: ["DNS Management", "Google Workspace", "A Records", "CNAME Records", "MX Records", "Domain Registrar"],
         links: {},
-        meetsObjective: []
+        meetsObjective: [
+          "Identified stale DNS zone records causing service outage",
+          "Diagnosed misconfiguration pointing to decommissioned hosts",
+          "Reconfigured A, CNAME, and MX records for proper resolution",
+          "Restored Google Workspace functionality through DNS remediation"
+        ]
       },
       {
-        id: "net3-project2",
-        title: "",
-        role: "",
-        team: [],
-        description: "",
-        tools: [],
-        links: {},
-        meetsObjective: []
+        ...projects.enterpriseNetwork,
+        title: "Enterprise Network Design Evaluation",
+        description: "Conducted a performance analysis of a large-scale enterprise network. Identified latency bottlenecks in WAN links and proposed an optimized architecture using Content Delivery Networks (CDNs) and QoS policies to prioritize business-critical traffic.",
+        meetsObjective: [
+          "Analyzed enterprise network performance and identified bottlenecks",
+          "Evaluated WAN link latency issues affecting business operations",
+          "Proposed CDN implementation for content delivery optimization",
+          "Designed QoS policies to prioritize business-critical traffic"
+        ]
       }
     ]
   },
@@ -604,23 +618,29 @@ export const netObjectives = [
     projects: [
       {
         id: "net4-project1",
-        title: "",
-        role: "",
-        team: [],
-        description: "",
-        tools: [],
+        title: "Linux Server Administration & Firewall Hardening",
+        role: "Systems Administrator",
+        team: ["Amari Bullard"],
+        description: "Performed systems administration on Ubuntu servers by configuring UFW (Uncomplicated Firewall) to enforce strict access control policies, explicitly allowing SSH (Port 22) traffic while blocking unauthorized ingress.",
+        tools: ["Ubuntu Server", "UFW", "SSH", "iptables", "Access Control", "Security Hardening"],
         links: {},
-        meetsObjective: []
+        meetsObjective: [
+          "Configured UFW firewall for strict access control enforcement",
+          "Implemented SSH access policies on Port 22",
+          "Blocked unauthorized ingress through firewall rules",
+          "Demonstrated enterprise-level server security administration"
+        ]
       },
       {
-        id: "net4-project2",
-        title: "",
-        role: "",
-        team: [],
-        description: "",
-        tools: [],
-        links: {},
-        meetsObjective: []
+        ...projects.disasterRecovery,
+        title: "Enterprise Business Continuity Planning (BCP)",
+        description: "Designed a disaster recovery strategy for a multinational hospitality firm. Implemented AWS Backup policies for S3 and RDS to ensure data durability and defined RTO/RPO objectives for enterprise resilience.",
+        meetsObjective: [
+          "Designed comprehensive disaster recovery strategy",
+          "Implemented AWS Backup policies for S3 and RDS data protection",
+          "Defined RTO/RPO objectives for enterprise resilience",
+          "Demonstrated backup recovery and business continuity administration"
+        ]
       }
     ]
   },
@@ -629,24 +649,26 @@ export const netObjectives = [
     text: objectiveTexts.net[4],
     projects: [
       {
-        id: "net5-project1",
-        title: "",
-        role: "",
-        team: [],
-        description: "",
-        tools: [],
-        links: {},
-        meetsObjective: []
+        ...projects.emergencySos,
+        title: "M5StickC Emergency SOS System",
+        description: "Developed a hardware-based IoT alert system using the M5StickC Plus ESP32. Integrated accelerometer sensors to detect falls and programmed WiFi-based HTTP requests to trigger remote emergency notifications.",
+        meetsObjective: [
+          "Developed IoT solution using M5StickC Plus ESP32 microcontroller",
+          "Integrated accelerometer sensors for fall detection",
+          "Programmed WiFi-based HTTP requests for network connectivity",
+          "Demonstrated IoT device integration with traditional networking"
+        ]
       },
       {
-        id: "net5-project2",
-        title: "",
-        role: "",
-        team: [],
-        description: "",
-        tools: [],
-        links: {},
-        meetsObjective: []
+        ...projects.thingspeakIot,
+        title: "Cloud-Based IoT Data Telemetry",
+        description: "Engineered a networked telemetry system using ThingSpeak API. Programmed an ESP32 microcontroller to transmit real-time sensor state data via REST API, allowing for remote monitoring and data visualization on mobile devices.",
+        meetsObjective: [
+          "Engineered IoT telemetry system with cloud connectivity",
+          "Programmed ESP32 for real-time sensor data transmission",
+          "Integrated REST API for remote data upload",
+          "Enabled mobile device access for remote monitoring and visualization"
+        ]
       }
     ]
   },
@@ -655,24 +677,26 @@ export const netObjectives = [
     text: objectiveTexts.net[5],
     projects: [
       {
-        id: "net6-project1",
-        title: "",
-        role: "",
-        team: [],
-        description: "",
-        tools: [],
-        links: {},
-        meetsObjective: []
+        ...projects.enterpriseSecurityPlan,
+        title: "Corporate Security Architecture Plan",
+        description: "Authored a comprehensive security policy for a major corporation (Apple, Inc context). Defined physical security controls (biometrics), administrative controls (least-privilege access), and technical encryption standards (AES-256) for data at rest.",
+        meetsObjective: [
+          "Defined physical security controls including biometric authentication",
+          "Established administrative controls with least-privilege access policies",
+          "Specified technical encryption standards (AES-256) for data at rest",
+          "Created comprehensive security policy aligned with industry standards"
+        ]
       },
       {
-        id: "net6-project2",
-        title: "",
-        role: "",
-        team: [],
-        description: "",
-        tools: [],
-        links: {},
-        meetsObjective: []
+        ...projects.cyberInsurance,
+        title: "Cyber Risk & Insurance Compliance Analysis",
+        description: "Evaluated cyber insurance policies against industry standards (PCI-DSS and GLBA). Assessed organizational risk posture and recommended coverage limits for ransomware, third-party liability, and data breach response.",
+        meetsObjective: [
+          "Evaluated cyber insurance policies against PCI-DSS and GLBA standards",
+          "Assessed organizational risk posture for security compliance",
+          "Recommended coverage limits for ransomware and data breach scenarios",
+          "Demonstrated security principles application within industry frameworks"
+        ]
       }
     ]
   }
